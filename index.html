@@ -82,6 +82,7 @@
                       <a href="#.">Etkinlikler</a>
                       <ul>
                         <!--<li><a href="blog.html">Blog List</a></li>-->
+                        <li><a href="kongre.html">23. KONGRE Etkinliği </a></li>
                         <li>
                           <a href="xtreme.html"
                             >IEEE Türkiye Xtreme Kampı'24
@@ -216,7 +217,7 @@
 
               <div class="container">
                 <div class="mil-banner-content mil-up">
-                  <h1 class="mil-muted mil-mb-60">
+                  <h1 class="mil-muted mil-mb-60 hero-title">
                     Işık IEEE <span class="mil-thin"></span><br />
                     <span class="mil-thin">Light the Future</span>
                   </h1>
@@ -226,12 +227,13 @@
                     </div>
                   </div>
 
-                  <a
-                    href="xtreme.html"
-                    class="mil-button mil-arrow-place mil-btn-space"
+                  <button
+                    id="menu-select-event"
+                    class="mil-button mil-arrow-place mil-btn-space resp-button"
                   >
-                    <span>IEEE Türkiye Xtreme Kampı'24</span>
-                  </a>
+                    <!-- <span>IEEE Türkiye Xtreme Kampı'24</span> -->
+                    <span>Etkinliklerimiz</span>
+                  </button>
 
                   <!--<a href="portfolio-1.html" class="mil-link mil-muted mil-arrow-place">
                                     <span>View works</span>
@@ -265,10 +267,10 @@
                         </text>
                       </g>
                     </svg>
-                    <a
+                    <!-- <a
                       href="#about"
                       class="mil-button mil-arrow-place mil-icon-button mil-arrow-down"
-                    ></a>
+                    ></a> -->
                   </div>
                 </div>
               </div>
@@ -277,7 +279,7 @@
           <!-- banner end -->
 
           <!-- about -->
-          <section id="about">
+          <!-- <section id="about">
             <div class="container mil-p-120-30">
               <div class="row justify-content-between align-items-center">
                 <div class="col-lg-6 col-xl-5">
@@ -329,7 +331,7 @@
                 </div>
               </div>
             </div>
-          </section>
+          </section> -->
           <!-- about end -->
 
           <!-- services -->
@@ -514,14 +516,15 @@
           <!-- team end -->
 
           <!-- reviews -->
-          <section class="mil-soft-bg">
+          <section class="mil-soft-bg g-1 rel-heart active-before">
+            <div id="g-heart" class="g-heart">💙</div>
             <div class="container mil-p-120-120">
               <div class="row">
                 <div class="col-lg-10"></div>
               </div>
 
               <h2 class="mil-center mil-up mil-mb-60">
-                Komitelerimiz <span class="mil-thin"></span> <br />
+                Bizi Tanıyın <span class="mil-thin"></span> <br />
                 <span class="mil-thin"></span>
               </h2>
 
@@ -557,16 +560,37 @@
                           data-swiper-parallax="-200"
                           data-swiper-parallax-opacity="0"
                         >
-                          <h5 class="mil-up mil-mb-10">Computer Society</h5>
-
+                          <h5 class="mil-up mil-mb-10">IŞIK IEEE</h5>
                           <p class="mil-text-xl mil-up">
-                            Computer Society Komitesi, teknoloji ve bilgisayar
-                            bilimine ilgi duyan öğrencileri bir araya getirerek,
-                            bilgi ve deneyimlerini paylaşabilecekleri bir ortam
-                            sunar. Komitemiz, üyelerimizin teknik becerilerini
-                            geliştirmek için 5 proje ekibi vardır aynı zamanda
-                            sektörü takip etmek ve ağlarını genişletmek amacıyla
-                            seminerler ve eğitimler düzenler.
+                            Işık Üniversitesi IEEE Öğrenci Kolu, teknoloji ve
+                            mühendislik tutkunlarını bir araya getiren dinamik
+                            bir topluluktur. Üyelerimize en güncel teknolojik
+                            gelişmeleri takip etme, sektör liderleriyle tanışma
+                            ve projelerde yer alarak teorik bilgilerini pratiğe
+                            dökme imkanı sunar. Bu sayede öğrenciler, ulusal ve
+                            uluslararası yarışmalarda yeteneklerini sergilerken,
+                            kariyerlerine de sağlam bir temel atarlar.
+                          </p>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div
+                          class="mil-review-frame mil-center"
+                          data-swiper-parallax="-200"
+                          data-swiper-parallax-opacity="0"
+                        >
+                          <h5 class="mil-up mil-mb-10">Computer Society</h5>
+                          <p class="mil-text-xl mil-up">
+                            Computer Society Komitesi, bilgisayar bilimi ve
+                            teknolojilerine tutku duyan öğrencileri bir araya
+                            getirerek, onları geleceğin teknoloji liderleri
+                            olarak yetiştirmeyi hedefler. Bünyesindeki 5 farklı
+                            proje ekibiyle üyelerimiz, yapay zekadan siber
+                            güvenliğe kadar geniş bir yelpazede uygulamalı
+                            çalışmalar yaparak teknik becerilerini
+                            derinleştirir. Sektörün önde gelen profesyonellerini
+                            ağırladığımız seminerler ve eğitimlerle de ağlarını
+                            genişletmelerine olanak tanırız.
                           </p>
                         </div>
                       </div>
@@ -577,12 +601,17 @@
                           data-swiper-parallax-opacity="0"
                         >
                           <h5 class="mil-up mil-mb-10">Women In Engineering</h5>
-
                           <p class="mil-text-xl mil-up">
-                            IEEE Women In Engineering (WIE) kadınları bilim,
+                            IEEE Women In Engineering (WIE), kadınların bilim,
                             teknoloji, mühendislik ve matematik (STEM)
-                            alanlarında destekleyen uluslararası en büyük teknik
-                            meslek örgütüdür.
+                            alanlarındaki varlığını güçlendirmeyi amaçlayan,
+                            dünyanın en büyük uluslararası teknik meslek
+                            örgütüdür. Işık Üniversitesi WIE olarak misyonumuz,
+                            kadın mühendis adaylarına ilham vermek, kariyer
+                            yollarında destek olmak ve liderlik becerilerini
+                            geliştirmektir. Bu doğrultuda rol model buluşmaları,
+                            teknik eğitimler ve sosyal sorumluluk projeleri
+                            düzenliyoruz.
                           </p>
                         </div>
                       </div>
@@ -595,14 +624,16 @@
                           <h5 class="mil-up mil-mb-10">
                             Power and Energy Society
                           </h5>
-
                           <p class="mil-text-xl mil-up">
-                            IEEE PES, elektrik enerjisi endüstrisindeki güncel
-                            teknolojik gelişmeleri paylaşmak, ekipman ve
-                            sistemlerin geliştirilmesi ve inşasına rehberlik
-                            eden teknik spesifikasyonları geliştirmek, üyeleri
-                            endüstriyel alanda eğitmek için dünyanın en büyük
-                            halka açık forumunu sunar.
+                            IEEE Power & Energy Society (PES), geleceğin enerji
+                            dünyasını şekillendirmeyi hedefleyen, alanındaki en
+                            büyük küresel forumdur. Komitemiz, sürdürülebilir ve
+                            yenilenebilir enerji kaynakları, akıllı şebekeler ve
+                            elektrik enerjisi sistemlerindeki en son teknolojik
+                            gelişmeleri merkezine alır. Üyelerimize, sektör
+                            liderleriyle bir araya gelme ve endüstriyel alanda
+                            yetkinlik kazanma fırsatları sunarak onları
+                            geleceğin enerji uzmanları olmaya hazırlıyoruz.
                           </p>
                         </div>
                       </div>
@@ -615,27 +646,18 @@
                           <h5 class="mil-up mil-mb-10">
                             Engineering in Medicine and Biology Society
                           </h5>
-
                           <p class="mil-text-xl mil-up">
-                            IEEE nin bir teknik komitesi olan EMBS (Engineering
-                            in Medicine and Biology Society), mühendislik
-                            bilimlerini ve teknolojisini tıp ve biyolojiye
-                            uygulayarak insan yaşam kalitesini artırmayı
-                            hedefleyen bir organizasyondur. Tıp teknolojileri,
-                            biyomedikal mühendislik, biyoinformatik ve sağlık
-                            bilgi teknolojileri gibi alanları bir araya
-                            getirerek bilimsel gelişmeleri paylaşmayı amaçlayan
-                            ve sektörün önde gelen isimlerini ve firmalarını bir
-                            araya getiren bir komitedir. Türkiyede 25’ten fazla
-                            üniversite ve 4000’den fazla üniversite öğrencisine
-                            ulaşan etkinlerde sektör ve akademide sıklıkla dile
-                            gelen Türkiye geneli etkinliklere Işık Üniversitesi
-                            olarak aktif olarak katılım göstermekteyiz. Ayrıca
-                            Işık üniversitesi olarak medicine-medical-biology-
-                            biotechnology ve biomedical alanlarına ilgi duyan
-                            öğrenciler ile değerli konuşmacılarımızı bir araya
-                            getirmeyi hedeflediğimiz etkinliklerimiz
-                            bulunmaktadır.
+                            IEEE EMBS, mühendislik bilimlerini tıp ve biyoloji
+                            ile birleştirerek insan sağlığını iyileştirecek
+                            teknolojiler geliştirmeyi amaçlar. Biyomedikal
+                            mühendislik, tıp teknolojileri ve biyoinformatik
+                            gibi disiplinler arası alanlara odaklanan komitemiz,
+                            üyelerine hem akademik hem de sektörel gelişmeleri
+                            yakından takip etme olanağı sunar. Türkiye
+                            genelindeki etkinliklere aktif katılım göstererek
+                            öğrencilerimizin bu yenilikçi alanda kariyer
+                            yapmaları için gerekli bağlantıları kurmalarını
+                            sağlıyoruz.
                           </p>
                         </div>
                       </div>
@@ -648,14 +670,15 @@
                           <h5 class="mil-up mil-mb-10">
                             Kardeş Öğrenci Kolları
                           </h5>
-
                           <p class="mil-text-xl mil-up">
-                            IEEE Kardeş Öğrenci Kolları Projesi olarak amacımız,
-                            IEEE Türkiye genelinde bulunan kollar arasında bir
-                            iletişim ağı kurarak sistematik bilgi paylaşımı
-                            sağlamaktır. Farklı kollarla birlikte etkinlikler
-                            düzenleyerek, edindiğimiz bilgileri birbirimizle
-                            paylaşarak topluluklarımızı geliştirmeyi
+                            IEEE Kardeş Öğrenci Kolları Projesi, "birlikten güç
+                            doğar" ilkesiyle hareket eder. Temel amacımız, IEEE
+                            Türkiye çatısı altındaki öğrenci kolları arasında
+                            güçlü bir iletişim ve iş birliği ağı kurarak ortak
+                            bir sinerji yaratmaktır. Farklı üniversitelerle
+                            ortak etkinlikler düzenleyerek, bilgi
+                            birikimlerimizi paylaşarak ve projeler geliştirerek
+                            tüm kolların gelişimine kolektif bir katkı sunmayı
                             hedefliyoruz.
                           </p>
                         </div>
@@ -669,26 +692,17 @@
                           <h5 class="mil-up mil-mb-10">
                             Robotics and Automation Society
                           </h5>
-
                           <p class="mil-text-xl mil-up">
-                            IEEE RAS (Robotics and Automation Society) robotik
-                            ve otomasyon alanlarında dünya genelinde mühendislik
-                            ve bilimsel bilgi paylaşımını teşvik eden bir
-                            komitedir. Misyonu, bu alanlardaki teknolojik
-                            ilerlemeleri desteklemek, mühendisler ve
-                            araştırmacılar arasında işbirliğini artırmak ve
-                            topluma fayda sağlayacak yenilikleri teşvik
-                            etmektir. Vizyonu, robotik ve otomasyonun her
-                            yönünde liderlik etmek, yenilikçi çözümler
-                            geliştirmek ve bu çözümleri yaygınlaştırarak dünya
-                            çapında yaşam kalitesini yükseltmektir. IEEE RAS,
-                            endüstriyel otomasyon, yapay zeka, insansız araçlar,
-                            sensör teknolojileri, robotik yazılımlar ve daha
-                            birçok alanda çalışmalar yapar ve bu konularda
-                            konferanslar, yayınlar ve eğitim programları
-                            düzenler. Bu sayede, robotik ve otomasyon
-                            teknolojilerinin gelişimine ve uygulamalarına önemli
-                            katkılarda bulunur.
+                            IEEE RAS (Robotics and Automation Society), robotik
+                            ve otomasyon alanlarındaki teknolojik ilerlemelere
+                            liderlik ederek topluma fayda sağlayacak yenilikleri
+                            teşvik etmeyi misyon edinir. Komitemiz, üyelerine
+                            yapay zeka, endüstriyel otomasyon ve insansız
+                            araçlar gibi geleceği şekillendiren konularda pratik
+                            deneyim kazanma imkanı sunar. Düzenlediğimiz atölye
+                            çalışmaları ve projelerle, teorik bilgiyi uygulamaya
+                            dönüştürerek üyelerimizi bu dinamik sektörün aranan
+                            mühendisleri olmaya hazırlıyoruz.
                           </p>
                         </div>
                       </div>
@@ -700,40 +714,10 @@
           </section>
           <!-- reviews end -->
 
-          <!-- partners -->
-          <div class="mil-soft-bg" style="display: none">
-            <div class="container mil-p-0-120">
-              <div class="swiper-container mil-infinite-show mil-up">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <a href="#." class="mil-partner-frame" style="width: 60px"
-                      ><img src="img/partners/1.svg" alt="logo"
-                    /></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#." class="mil-partner-frame" style="width: 100px"
-                      ><img src="img/partners/2.svg" alt="logo"
-                    /></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#." class="mil-partner-frame" style="width: 60px"
-                      ><img src="img/partners/1.svg" alt="logo"
-                    /></a>
-                  </div>
-                  <div class="swiper-slide">
-                    <a href="#." class="mil-partner-frame" style="width: 100px"
-                      ><img src="img/partners/2.svg" alt="logo"
-                    /></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- partners end -->
-
           <!-- blog -->
-          <section>
-            <div class="container mil-p-120-60">
+          <section id="#about">
+            <div class="container mil-p-120-60 slideshowwrap">
+              <h2>Işık Birlikten Doğar</h2>
               <div class="swiper-container mil-2-slider mil-up mil-mb-120">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
@@ -794,14 +778,45 @@
           </section>
           <!-- blog end -->
 
+          <!-- partners -->
+          <div class="mil-soft-bg" style="display: none">
+            <div class="container mil-p-0-120">
+              <div class="swiper-container mil-infinite-show mil-up">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <a href="#." class="mil-partner-frame" style="width: 60px"
+                      ><img src="img/partners/1.svg" alt="logo"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#." class="mil-partner-frame" style="width: 100px"
+                      ><img src="img/partners/2.svg" alt="logo"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#." class="mil-partner-frame" style="width: 60px"
+                      ><img src="img/partners/1.svg" alt="logo"
+                    /></a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="#." class="mil-partner-frame" style="width: 100px"
+                      ><img src="img/partners/2.svg" alt="logo"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- partners end -->
+
           <!-- calendar start -->
           <div class="calendar-wrap">
             <h2>Etkinlik Takvimimiz</h2>
             <iframe
-              src="https://calendar.google.com/calendar/embed?src=c_8438a3cc0be59bb17d9a34a8275620e4fd214a636f31972494601baabb3bbccd%40group.calendar.google.com&ctz=Europe%2FIstanbul"
-              style="border: 0"
+              src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FIstanbul&showPrint=0&hl=tr&showCalendars=0&title&showTitle=0&src=Y184NDM4YTNjYzBiZTU5YmIxN2Q5YTM0YTgyNzU2MjBlNGZkMjE0YTYzNmYzMTk3MjQ5NDYwMWJhYWJiM2JiY2NkQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23f09300"
+              style="border-width: 0"
               width="100%"
-              height="900px"
+              height="900"
               frameborder="0"
               scrolling="no"
             ></iframe>
@@ -827,6 +842,9 @@
 
                             <li class="mil-up">
                               <a href="contact.html">İletişim</a>
+                            </li>
+                            <li class="mil-up">
+                              <a href="kongre.html">23. KONGRE Etkinliği</a>
                             </li>
                             <li class="mil-up">
                               <a href="xtreme.html">IEEE Xtreme Kampı</a>
@@ -862,7 +880,8 @@
                   <div class="col-md-4 col-lg-6 mil-mb-60">
                     <div class="mil-vert-between">
                       <p class="mil-dark-soft mil-up">
-                        Işık IEEE CS Web Ekibi Tarafından Yapılmıştır.
+                        © 2025 Işık University IEEE Student Branch - All Rights
+                        Reserved.
                       </p>
                     </div>
                   </div>
