@@ -4603,3 +4603,19 @@ html.is-animating .mil-menu-frame {
   width: 100%;
   height: auto;
 }
+
+/* MOBILE PERFORMANCE OPTIMIZATION */
+@media screen and (max-width: 600px) {
+  .mil-animation-frame_mobile_perf {
+    display: none !important;
+  }
+
+  .mil-banner.mil-dark-bg {
+    background-image: url(../img/bg/bg-performance.jpg);
+    background-size: cover;
+  }
+
+  .mil-dark-bg:before {
+    background: transparent !important;
+  }
+}
