@@ -436,7 +436,7 @@ $(function () {
     $(this).toggleClass("mil-active");
     $(this).next().toggleClass("mil-active");
   });
-  $("#menu-select-event").on("click", function () {
+  $('[data-event="menu-select-event"]').on("click", function () {
     $(".mil-menu-btn").toggleClass("mil-active");
     $(".mil-menu").toggleClass("mil-active");
     $(".mil-menu-frame").toggleClass("mil-active");
@@ -583,7 +583,7 @@ $(function () {
     '<div class="mil-custom-dot mil-slide-6"></div>',
     '<div class="mil-custom-dot mil-slide-7"></div>',
   ];
-  var hearts = ["💙", "🧡", "💜", "💚", "💜", "💛", "❤️"];
+  var hearts = ["💙", "🧡", "🩷", "💚", "💜", "💛", "❤️"];
   var mySwiper = new Swiper(".mil-reviews-slider", {
     // If we need pagination
 
