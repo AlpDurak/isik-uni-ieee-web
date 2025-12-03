@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSCON'26 | Işık Üniversitesi IEEE Öğrenci Kolu</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Tailwind Configs -->
+    <style type="text/tailwindcss">
+        @theme {
+            --color-orange-50: #fff7ed;
+            --color-orange-100: #ffedd5;
+            --color-orange-200: #fed7aa;
+            --color-orange-300: #fdba74;
+            --color-orange-400: #fb923c;
+            
+            /* Custom Brand Color */
+            --color-orange-500: #FFA300; 
+            
+            --color-orange-600: #ea580c;
+            --color-orange-700: #c2410c;
+            --color-orange-800: #9a3412;
+            --color-orange-900: #7c2d12;
+            
+            --color-orange: #FFA300; 
+        }
+    </style>
+
+    <style>
+        :root {
+            --color-cs-blue: #00B5E2;
+            --color-cs-orange: #FFA300;
+            --color-cs-dark-blue: #00629B;
+            --color-cs-gray: #75787B;
+        }
+
+        /* Text Smart Animate */
+        .text-smart-animate>* {
+            opacity: 0;
+        }
+
+        .text-smart-animate.running>* {
+            animation: 200ms ease-in textSmartAnimate forwards;
+        }
+
+        @keyframes textSmartAnimate {
+            0% {
+                opacity: 0;
+            }
+
+            1% {
+                opacity: 1;
+            }
+
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Appear Up Animate */
+        .appear-up-animate {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .appear-up-animate.running {
+            animation: 300ms ease-in appearUpAnimate forwards;
+        }
+
+        @keyframes appearUpAnimate {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translateY(0px);
+            }
+        }
+
+        /* Animated Background */
+        .animated-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: -1;
+            opacity: 1;
+        }
+
+        .animated-background span {
+            position: absolute;
+            font-family: monospace;
+            font-size: 32px;
+            color: var(--color-cs-blue);
+            user-select: none;
+            opacity: 0.07;
+            animation: flicker 1s infinite;
+        }
+
+        @keyframes flicker {
+
+            0%,
+            100% {
+                opacity: 0.07;
+            }
+
+            50% {
+                opacity: 0.15;
+            }
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white font-sans">
+    <nav
+        class="w-full flex justify-between items-center px-10 py-7 fixed top-0 left-0 backdrop-blur-lg bg-black/30 z-100">
+        <img class="w-96 object-contain" src="./img/cscon/TrSac.png" />
+        <div class="flex flex-row gap-10 justift-center items-center">
+            <div class="flex gap-10 justift-center align-center flex-row">
+                <a href="#" class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Ana
+                    Sayfa</a>
+                <a href="#about"
+                    class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Hakkında</a>
+                <a href="#speakers"
+                    class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Konuşmacılar</a>
+                <a href="#schedule"
+                    class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Program</a>
+                <a href="#sponsors"
+                    class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Sponsorlar</a>
+            </div>
+            <button
+                class="grid place-items-center bg-orange-500 text-white font-semibold py-2 px-3 rounded-md hover:bg-orange-400 transition duration-150 ease-in-out cursor-pointer">
+                Kayıt Ol
+            </button>
+        </div>
+    </nav>
+    <section id="hero" class="min-h-screen flex justify-center items-center">
+        <div class="flex flex-col justift-center items-center gap-8">
+            <div class="flex flex-col justift-center items-center gap-2">
+                <img src="./img/cscon/cscon-logo.png" class="w-120 object-contain" />
+                <p class="text-xl appear-up-animate">Türkiye'nin En Prestijli Yazılım Konferansı</p>
+            </div>
+            <div class="flex gap-4">
+                <button
+                    class="cursor-pointer w-52 grid place-items-center bg-orange-500 text-white font-semibold py-3 px-5 rounded-md hover:bg-orange-400 trasition duration-150 ease-in-out">
+                    Kayıt Ol
+                </button>
+                <button
+                    class=" cursor-pointer w-52 grid place-items-center bg-black text-orange-500 font-semibold py-3 px-5 rounded-md hover:bg-orange-500 hover:text-white mil-main-transition duration-150 ease-in-out border-2 border-orange-500 border-radius">
+                    Etkinlik Programı
+                </button>
+            </div>
+        </div>
+
+        <!-- Background Generator -->
+        <div class="animated-background">
+            <span>0</span>
+        </div>
+    </section>
+
+    <section id="about" class="min-h-screen flex flex-col items-center py-20 gap-20">
+        <div class="flex flex-col gap-3 justify-center items-center">
+            <h2 class="text-4xl font-bold mb-5 text-smart-animate text-orange-500">CSCON Nedir?</h2>
+            <p class="max-w-3xl text-center text-lg appear-up-animate">
+                CSCON (Computer Society Conference), yazılım ve teknolojiye odaklanan, alanlarında başarılı
+                konuşmacıların
+                deneyimlerini paylaştıkları, katılımcıları gelişen teknolojiler hakkında bilgilendiren ve sektördeki
+                yenilikleri takip etmelerini sağlayan 3 günlük bir etkinliktir. Katılımcılar etkinlikte kendi ilgi
+                alanlarına göre
+                interaktif workshoplara katılıp bilgi birikimlerini arttırabilir, fuaye alanlarında ise sektördeki
+                firmalarla tanışma ve networking yapma fırsatı bulabilirler.
+            </p>
+        </div>
+
+        <div class="flex flex-row flex-wrap justify-center items-center gap-5">
+            <div style="animation-delay: 200ms;"
+                class="flex flex-col justify-center items-center gap-2 rounded-xl border-4 border-blue-500 w-50 h-40 appear-up-animate">
+                <h3 class="text-2xl font-semibold text-blue-500">Konuşmacı</h3>
+                <p class="text-4xl">30+</p>
+            </div>
+            <div style="animation-delay: 300ms;"
+                class="flex flex-col justify-center items-center gap-2 rounded-xl border-4 border-purple-500 w-50 h-40 appear-up-animate">
+                <h3 class="text-2xl font-semibold text-purple-500">Şirket</h3>
+                <p class="text-4xl">20+</p>
+            </div>
+            <div style="animation-delay: 400ms;"
+                class="flex flex-col justify-center items-center gap-2 rounded-xl border-4 border-green-500 w-50 h-40 appear-up-animate">
+                <h3 class="text-2xl font-semibold text-green-500">Katılımcı</h3>
+                <p class="text-4xl">800+</p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+
+        // Animations
+        const textSmartAnimateElemenets = document.getElementsByClassName("text-smart-animate");
+        const appearUpAnimateElements = document.getElementsByClassName("appear-up-animate");
+
+        let positions = [];
+
+        // Text Smart Animate
+        for (let i = 0; i < textSmartAnimateElemenets.length; i++) {
+            const element = textSmartAnimateElemenets[i];
+
+            let text = element.innerText;
+            const chars = text.split("");
+
+            const duration = 1000 / chars.length; // 1 seconds total
+
+            chars.forEach((char, index) => {
+                if (index === 0) {
+                    element.innerHTML = "";
+                }
+                element.innerHTML += `<span style="animation-delay:${duration * (index + 1)}ms">${char}</span>`;
+            });
+
+            positions.push({ element, y: window.scrollY + element.getBoundingClientRect().top });
+        }
+
+        // Appear Up Animate
+        for (let i = 0; i < appearUpAnimateElements.length; i++) {
+            const element = appearUpAnimateElements[i];
+            positions.push({ element, y: window.scrollY + element.getBoundingClientRect().top });
+        }
+
+        // Scroll Events
+        document.addEventListener("scroll", function () {
+            // Constants
+            const scrollTop = window.scrollY;
+            const scrollBottom = scrollTop + window.innerHeight;
+
+            // Text Animate
+            const runElements = positions.filter((v) => {
+                console.log(scrollTop, scrollBottom, v.y);
+                if (v.element.classList.contains("running")) return false;
+                if (scrollBottom > v.y && scrollTop < v.y) return true;
+                return false;
+            })
+
+            console.log(runElements);
+
+            runElements.forEach((v) => {
+                v.element.classList.add("running");
+            });
+        })
+
+        // Animated Background
+        window.addEventListener("resize", function () {
+            const animatedBackground = document.querySelector(".animated-background");
+            const textBounds = animatedBackground.children[0].getBoundingClientRect();
+            const backgroundBounds = animatedBackground.getBoundingClientRect();
+            const cols = Math.ceil(backgroundBounds.width / textBounds.width);
+            const rows = Math.ceil(backgroundBounds.height / textBounds.height);
+
+            animatedBackground.innerHTML = "";
+
+            for (let r = 0; r < rows; r++) {
+                for (let c = 0; c < cols; c++) {
+                    // make inner text 0 or 1 randomly
+                    const span = document.createElement("span");
+                    span.innerText = Math.random() > 0.5 ? "0" : "1";
+                    span.style.top = `${r * textBounds.height}px`;
+                    span.style.left = `${c * textBounds.width}px`;
+                    span.style.animationDelay = `${Math.random() * 10}s`;
+                    animatedBackground.appendChild(span);
+                }
+            }
+        })
+
+        document.dispatchEvent(new Event("scroll"));
+        window.dispatchEvent(new Event("resize"));
+    </script>
+</body>
+
+</html>
