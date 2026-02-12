@@ -7,6 +7,31 @@
     <!-- TEMP END -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="CSCON'26, Işık Üniversitesi IEEE Öğrenci Kolu ev sahipliğinde düzenlenen Türkiye'nin en prestijli yazılım ve teknoloji konferansıdır. Sektör liderleri, workshoplar ve networking fırsatları sizi bekliyor.">
+    <meta name="keywords"
+        content="CSCON, CSCON'26, IEEE, Işık Üniversitesi, yazılım konferansı, teknoloji, bilgisayar mühendisliği, workshop, Sefer Çınar, Alp Durak">
+    <meta name="author" content="Işık Üniversitesi IEEE Öğrenci Kolu">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://isikieee.com.tr/cscon26.html">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://isikieee.com.tr/cscon26.html">
+    <meta property="og:title" content="CSCON'26 | Işık Üniversitesi IEEE Öğrenci Kolu">
+    <meta property="og:description"
+        content="Türkiye'nin en prestijli yazılım konferansı CSCON'26, 6-8 Mart 2026 tarihlerinde Işık Üniversitesi ev sahipliğinde gerçekleşecek.">
+    <meta property="og:image" content="https://isikieee.com.tr/img/cscon/cscon-logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://isikieee.com.tr/cscon26.html">
+    <meta property="twitter:title" content="CSCON'26 | Işık Üniversitesi IEEE Öğrenci Kolu">
+    <meta property="twitter:description"
+        content="Türkiye'nin en prestijli yazılım konferansı CSCON'26, 6-8 Mart 2026 tarihlerinde Işık Üniversitesi ev sahipliğinde gerçekleşecek.">
+    <meta property="twitter:image" content="https://isikieee.com.tr/img/cscon/cscon-logo.png">
+
     <title>CSCON'26 | Işık Üniversitesi IEEE Öğrenci Kolu</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <script src="https://kit.fontawesome.com/f23a5aadfc.js" crossorigin="anonymous"></script>
@@ -160,7 +185,67 @@
                 transform: translateY(-40px);
             }
         }
+
+        [data-visible="false"] {
+            display: none;
+        }
+
+        /* Seçili Gün Stili */
+        .day-btn.active {
+            background-color: #2563eb;
+            /* Parlak Mavi */
+            color: white;
+            border-color: #3b82f6;
+            box-shadow: 0 0 15px rgba(37, 99, 235, 0.5);
+        }
+
+        /* Dropdown ok işaretini özelleştirme (Dark tema için) */
+        select {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1em;
+        }
+
+        /* JSON-LD for SEO */
+        .structured-data {
+            display: none;
+        }
     </style>
+
+    <!-- Structured Data for the Event -->
+    <script type="application/ld+json" class="structured-data">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "CSCON'26",
+      "startDate": "2026-03-06T09:00",
+      "endDate": "2026-03-08T18:00",
+      "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "location": [
+        {
+            "@type": "Place",
+            "name": "Rauf Denktaş Kültür Merkezi",
+            "address": "Sarıyer, İstanbul"
+        },
+        {
+            "@type": "Place",
+            "name": "Işık Üniversitesi Maslak Kampüsü",
+            "address": "Maslak, İstanbul"
+        }
+      ],
+      "image": "https://isikieee.com.tr/img/cscon/cscon-logo.png",
+      "description": "Türkiye'nin en prestijli yazılım ve teknoloji konferansı. Alanında uzman konuşmacılar, interaktif workshoplar ve networking fırsatları ile dolu 3 gün.",
+      "organizer": {
+        "@type": "Organization",
+        "name": "Işık Üniversitesi IEEE Öğrenci Kolu",
+        "url": "https://isikieee.com.tr"
+      }
+    }
+    </script>
 </head>
 
 <body class="bg-gray-950 text-white font-sans">
@@ -169,14 +254,14 @@
         <img class="w-screen sm:w-96 xl:w-112 object-contain" src="./img/cscon/TrSac.png" />
         <div class="flex flex-row gap-5 items-center justify-between max-sm:w-screen max-sm:px-5">
             <div class="flex gap-5 justift-center align-center flex-row lg:flex hidden xl:gap-10 mr-5">
-                <a href="#" class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Ana
-                    Sayfa</a>
                 <a href="#about"
                     class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Hakkında</a>
+                <a href="#venues"
+                    class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Konumlar</a>
+                <a href="#schedule"
+                    class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Etkinlik Akışı</a>
                 <a href="#speakers"
                     class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Konuşmacılar</a>
-                <a href="#schedule"
-                    class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Program</a>
                 <a href="#sponsors"
                     class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Sponsorlar</a>
             </div>
@@ -185,178 +270,581 @@
                 class="grid place-items-center rounded-md w-10 h-10 hover:bg-gray-300/20 lg:hidden cursor-pointer">
                 <i class="fa-solid fa-bars fa-lg"></i>
             </button>
-            <button
+            <a href="https://forms.gle/DNtMDmvQXBaZPanF6" target="_blank" rel="noopener noreferrer"
                 class="grid place-items-center bg-orange-500 text-orange-950 font-semibold py-2 px-4 rounded-md hover:bg-orange-600 hover:text-white transition duration-150 ease-in-out cursor-pointer">
                 Kayıt Ol
-            </button>
+            </a>
         </div>
 
         <!-- Mobile Navigation -->
         <div data-nav-panel
             class="w-full absolute top-full left-0 py-5 px-5 flex flex-col gap-2 bg-gray-950 hidden disappear-up">
-            <a href="#"
-                class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Ana
-                Sayfa</a>
             <a href="#about"
                 class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Hakkında</a>
+            <a href="#venues"
+                class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Konumlar</a>
+            <a href="#schedule"
+                class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Etkinlik
+                Akışı</a>
             <a href="#speakers"
                 class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Konuşmacılar</a>
-            <a href="#schedule"
-                class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Program</a>
+
             <a href="#sponsors"
                 class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Sponsorlar</a>
         </div>
     </nav>
-    <section id="hero" class="min-h-screen flex justify-center items-center max-sm:items-end max-sm:pb-20">
-        <div class="flex flex-col justify-center items-center gap-8 max-sm:w-full max-sm:px-6">
-            <div class="flex flex-col justift-center items-center gap-2">
-                <span class="font-mono text-orange-500 uppercase font-bold text-center">Işık Üniversitesi Ev
-                    Sahipliğinde</span>
-                <img src="./img/cscon/cscon-logo.png" class="w-130 object-contain max-sm:w-full" />
-                <p class="text-xl appear-up-animate text-center">Türkiye'nin En Prestijli Yazılım Konferansı</p>
-            </div>
-            <div class="flex gap-4 max-sm:w-full">
-                <button
-                    class="cursor-pointer w-52 grid place-items-center bg-orange-500 text-orange-950 font-semibold py-3 px-5 rounded-md hover:bg-orange-600 hover:text-white trasition duration-150 ease-in-out max-sm:w-full">
-                    Kayıt Ol
-                </button>
-                <button
-                    class="cursor-pointer w-52 grid place-items-center bg-black text-orange-500 font-semibold py-3 px-5 rounded-md hover:bg-orange-600 hover:border-orange-600 hover:text-white mil-main-transition duration-150 ease-in-out border-2 border-orange-500 border-radius max-sm:w-full">
-                    Etkinlik Programı
-                </button>
-            </div>
-        </div>
+    <main>
 
-        <!-- Background Generator -->
-        <div class="animated-background">
-            <span>0</span>
-        </div>
-    </section>
-
-    <hr class="text-gray-600/10" />
-
-    <section id="about" class="flex flex-col items-center py-30 gap-20 px-5">
-        <div class="flex flex-col gap-3 justify-center items-center">
-            <h2 class="text-4xl font-bold mb-5 text-smart-animate text-orange-500">CSCON Nedir?</h2>
-            <p class="max-w-3xl text-center text-lg appear-up-animate">
-                CSCON (Computer Society Conference), yazılım ve teknolojiye odaklanan, alanlarında başarılı
-                konuşmacıların
-                deneyimlerini paylaştıkları, katılımcıları gelişen teknolojiler hakkında bilgilendiren ve sektördeki
-                yenilikleri takip etmelerini sağlayan 3 günlük bir etkinliktir. Katılımcılar etkinlikte kendi ilgi
-                alanlarına göre
-                interaktif workshoplara katılıp bilgi birikimlerini arttırabilir, fuaye alanlarında ise sektördeki
-                firmalarla tanışma ve networking yapma fırsatı bulabilirler.
-            </p>
-        </div>
-
-        <div class="flex flex-row flex-wrap justify-center items-center gap-5">
-            <div style="animation-delay: 200ms;"
-                class="flex flex-col justify-center items-center gap-2 rounded-xl border-4 border-blue-500 w-50 h-40 appear-up-animate bg-blue-500/5 max-sm:w-full">
-                <h3 class="text-2xl font-semibold text-blue-500">Konuşmacı</h3>
-                <p class="text-4xl font-bold">30+</p>
-            </div>
-            <div style="animation-delay: 300ms;"
-                class="flex flex-col justify-center items-center gap-2 rounded-xl border-4 border-purple-500 w-50 h-40 appear-up-animate bg-purple-500/5 max-sm:w-full">
-                <h3 class="text-2xl font-semibold text-purple-500">Şirket</h3>
-                <p class="text-4xl font-bold">20+</p>
-            </div>
-            <div style="animation-delay: 400ms;"
-                class="flex flex-col justify-center items-center gap-2 rounded-xl border-4 border-green-500 w-50 h-40 appear-up-animate bg-green-500/5 max-sm:w-full">
-                <h3 class="text-2xl font-semibold text-green-500">Katılımcı</h3>
-                <p class="text-4xl font-bold">800+</p>
-            </div>
-        </div>
-    </section>
-
-    <section id="speakers"
-        class="flex flex-col items-center py-30 gap-20 max-md:px-10 max-2xl:px-20 px-60 bg-blue-900/10">
-        <h2 class="text-4xl font-bold mb-5 text-smart-animate text-orange-500">Konuşmacılarımız</h2>
-
-        <div class="flex flex-wrap justify-center items-center gap-20">
-
-            <div class="flex flex-col justify-start items-center h-86 gap-5 appear-up-animate"
-                style="animation-delay: 100ms;">
-                <img alt="Aylin Yalçın" src="https://mockmind-api.uifaces.co/content/human/128.jpg"
-                    class="w-50 h-50 object-cover rounded-full" />
-                <div class="flex flex-col gap-3 justify-center items-center text-center w-60">
-                    <h3 class="font-bold text-3xl">Aylin Yalçın</h3>
-                    <p class="font-mono uppercase text-md">UI/UX Designer at PixelForge</p>
+        <section id="hero" class="h-svh flex justify-center items-center max-sm:items-end max-sm:pb-20">
+            <div class="flex flex-col justify-center items-center gap-8 max-sm:w-full max-sm:px-6">
+                <div class="flex flex-col justift-center items-center gap-2">
+                    <span class="font-mono text-orange-500 uppercase font-bold text-center">Işık Üniversitesi Ev
+                        Sahipliğinde</span>
+                    <img src="./img/cscon/cscon-logo.png" class="w-130 object-contain max-sm:w-full" />
+                    <p class="text-xl appear-up-animate text-center">Türkiye'nin En Prestijli Yazılım Konferansı</p>
+                </div>
+                <div class="flex gap-4 max-sm:w-full">
+                    <a href="https://forms.gle/DNtMDmvQXBaZPanF6" target="_blank" rel="noopener noreferrer"
+                        class="cursor-pointer w-52 grid place-items-center bg-orange-500 text-orange-950 font-semibold py-3 px-5 rounded-md hover:bg-orange-600 hover:text-white trasition duration-150 ease-in-out max-sm:w-full">
+                        Kayıt Ol
+                    </a>
+                    <a href="#schedule"
+                        class="cursor-pointer w-52 grid place-items-center bg-black text-orange-500 font-semibold py-3 px-5 rounded-md hover:bg-orange-600 hover:border-orange-600 hover:text-white mil-main-transition duration-150 ease-in-out border-2 border-orange-500 border-radius max-sm:w-full">
+                        Etkinlik Programı
+                    </a>
                 </div>
             </div>
 
-            <div class="flex flex-col justify-start items-center h-86 gap-5 appear-up-animate"
-                style="animation-delay: 200ms;">
-                <img alt="Mert Şahin" src="https://mockmind-api.uifaces.co/content/human/80.jpg"
-                    class="w-50 h-50 object-cover rounded-full" />
-                <div class="flex flex-col gap-3 justify-center items-center text-center w-60">
-                    <h3 class="font-bold text-3xl">Mert Şahin</h3>
-                    <p class="font-mono uppercase text-md">Backend Engineer at CloudCore</p>
-                </div>
+            <!-- Background Generator -->
+            <div class="animated-background">
+                <span>0</span>
+            </div>
+        </section>
+
+        <hr class="text-gray-600/10" />
+
+        <section id="about" class="flex flex-col items-center py-30 gap-20 px-5">
+            <div class="flex flex-col gap-3 justify-center items-center">
+                <h2 class="text-4xl font-bold mb-5 text-smart-animate text-orange-500">CSCON Nedir?</h2>
+                <p class="max-w-3xl text-center text-lg appear-up-animate">
+                    CSCON (Computer Society Conference), yazılım ve teknolojiye odaklanan, alanlarında başarılı
+                    konuşmacıların
+                    deneyimlerini paylaştıkları, katılımcıları gelişen teknolojiler hakkında bilgilendiren ve sektördeki
+                    yenilikleri takip etmelerini sağlayan 3 günlük bir etkinliktir. Katılımcılar etkinlikte kendi ilgi
+                    alanlarına göre
+                    interaktif workshoplara katılıp bilgi birikimlerini arttırabilir, fuaye alanlarında ise sektördeki
+                    firmalarla tanışma ve networking yapma fırsatı bulabilirler.
+                </p>
             </div>
 
-            <div class="flex flex-col justify-start items-center h-86 gap-5 appear-up-animate"
-                style="animation-delay: 300ms;">
-                <img alt="Elif Demir" src="https://mockmind-api.uifaces.co/content/human/219.jpg"
-                    class="w-50 h-50 object-cover rounded-full" />
-                <div class="flex flex-col gap-3 justify-center items-center text-center w-60">
-                    <h3 class="font-bold text-3xl">Elif Demir</h3>
-                    <p class="font-mono uppercase text-md">AI Researcher at NeuralEdge</p>
+            <div class="flex flex-row flex-wrap justify-center items-center gap-5">
+                <div style="animation-delay: 200ms;"
+                    class="flex flex-col justify-center items-center gap-2 rounded-xl border-4 border-blue-500 w-50 h-40 appear-up-animate bg-blue-500/5 max-sm:w-full">
+                    <h3 class="text-2xl font-semibold text-blue-500">Konuşmacı</h3>
+                    <p class="text-4xl font-bold">30+</p>
+                </div>
+                <div style="animation-delay: 300ms;"
+                    class="flex flex-col justify-center items-center gap-2 rounded-xl border-4 border-purple-500 w-50 h-40 appear-up-animate bg-purple-500/5 max-sm:w-full">
+                    <h3 class="text-2xl font-semibold text-purple-500">Şirket</h3>
+                    <p class="text-4xl font-bold">20+</p>
+                </div>
+                <div style="animation-delay: 400ms;"
+                    class="flex flex-col justify-center items-center gap-2 rounded-xl border-4 border-green-500 w-50 h-40 appear-up-animate bg-green-500/5 max-sm:w-full">
+                    <h3 class="text-2xl font-semibold text-green-500">Katılımcı</h3>
+                    <p class="text-4xl font-bold">800+</p>
                 </div>
             </div>
+        </section>
 
-            <div class="flex flex-col justify-start items-center h-86 gap-5 appear-up-animate"
-                style="animation-delay: 400ms;">
-                <img alt="Arda Korkmaz" src="https://mockmind-api.uifaces.co/content/human/104.jpg"
-                    class="w-50 h-50 object-cover rounded-full" />
-                <div class="flex flex-col gap-3 justify-center items-center text-center w-60">
-                    <h3 class="font-bold text-3xl">Arda Korkmaz</h3>
-                    <p class="font-mono uppercase text-md">Mobile Developer at NovaApps</p>
-                </div>
+        <!-- Etkinlik Konumları Section -->
+        <section id="venues"
+            class="flex flex-col items-center py-16 md:py-30 gap-10 md:gap-16 px-4 md:px-5 bg-blue-900/10">
+            <div class="flex flex-col gap-3 justify-center items-center">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-5 text-smart-animate text-orange-500">
+                    Etkinlik Konumları</h2>
+                <p class="max-w-3xl text-center text-base md:text-lg appear-up-animate px-2">
+                    CSCON'26, 3 günlük etkinlik boyunca iki farklı prestijli Konumda gerçekleşecek.
+                </p>
             </div>
 
-            <div class="flex flex-col justify-start items-center h-86 gap-5 appear-up-animate"
-                style="animation-delay: 500ms;">
-                <img alt="Selin Koç" src="https://mockmind-api.uifaces.co/content/human/125.jpg"
-                    class="w-50 h-50 object-cover rounded-full" />
-                <div class="flex flex-col gap-3 justify-center items-center text-center w-60">
-                    <h3 class="font-bold text-3xl">Selin Koç</h3>
-                    <p class="font-mono uppercase text-md">Data Scientist at AnalytIQ</p>
+            <div class="flex flex-col lg:flex-row gap-6 md:gap-10 w-full max-w-6xl justify-center items-stretch">
+
+                <!-- 1. Gün - BKSM -->
+                <a href="https://maps.app.goo.gl/87gm65zv1NQjgyf18" target="_blank" rel="noopener noreferrer"
+                    class="flex-1 flex flex-col rounded-xl md:rounded-2xl overflow-hidden border-2 border-orange-500/30 bg-gradient-to-b from-orange-500/10 to-transparent appear-up-animate cursor-pointer hover:border-orange-500/60 transition-colors"
+                    style="animation-delay: 200ms;">
+                    <div class="relative h-48 sm:h-56 md:h-64 overflow-hidden">
+                        <img src="./img/cscon/rdkm.jpg" alt="Rauf Denktaş Kültür Merkezi"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                            onerror="this.src='https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80'; this.onerror=null;" />
+                        <div
+                            class="absolute top-3 left-3 md:top-4 md:left-4 bg-orange-500 text-orange-950 font-bold py-1.5 px-3 md:py-2 md:px-4 rounded-lg text-sm md:text-base">
+                            <i class="fa-solid fa-calendar-day mr-1.5 md:mr-2"></i>1. GÜN
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 md:gap-4 p-4 md:p-6 flex-1">
+                        <h3 class="text-xl md:text-2xl font-bold text-orange-500">Rauf Denktaş Kültür Merkezi</h3>
+                        <p class="text-gray-300 text-sm md:text-base leading-relaxed">
+                            Etkinliğimizin ilk günü, İstanbul'un kalbinde yer alan Rauf Denktaş Kültür Merkezi'nde
+                            gerçekleşecek.
+                            Modern altyapısı ve merkezi konumuyla Rauf Denktaş Kültür Merkezi, açılış konuşmalarımız
+                            için
+                            ideal bir Konum sunuyor.
+                        </p>
+                        <div class="flex items-center gap-2 text-gray-400 mt-auto text-sm md:text-base">
+                            <i class="fa-solid fa-location-dot text-orange-500"></i>
+                            <span>Sarıyer, İstanbul</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- 2. ve 3. Gün - IŞIK Maslak -->
+                <a href="https://maps.app.goo.gl/hbWNqpiDhUsuWNoT9" target="_blank" rel="noopener noreferrer"
+                    class="flex-1 flex flex-col rounded-xl md:rounded-2xl overflow-hidden border-2 border-blue-500/30 bg-gradient-to-b from-blue-500/10 to-transparent appear-up-animate cursor-pointer hover:border-blue-500/60 transition-colors"
+                    style="animation-delay: 400ms;">
+                    <div class="relative h-48 sm:h-56 md:h-64 overflow-hidden">
+                        <img src="./img/cscon/isik-maslak.jpeg" alt="Işık Üniversitesi Maslak Kampüsü"
+                            class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                            onerror="this.src='https://images.unsplash.com/photo-1562774053-701939374585?w=800&q=80'; this.onerror=null;" />
+                        <div
+                            class="absolute top-3 left-3 md:top-4 md:left-4 bg-blue-500 text-blue-950 font-bold py-1.5 px-3 md:py-2 md:px-4 rounded-lg text-sm md:text-base">
+                            <i class="fa-solid fa-calendar-days mr-1.5 md:mr-2"></i>2. ve 3. GÜN
+                        </div>
+                    </div>
+                    <div class="flex flex-col gap-3 md:gap-4 p-4 md:p-6 flex-1">
+                        <h3 class="text-xl md:text-2xl font-bold text-blue-500">Işık Üniversitesi Maslak Kampüsü</h3>
+                        <p class="text-gray-300 text-sm md:text-base leading-relaxed">
+                            Etkinliğin ikinci ve üçüncü günleri, ev sahibimiz Işık Üniversitesi'nin Maslak Kampüsü'nde
+                            devam
+                            edecek.
+                            Workshoplar, teknik oturumlar ve networking etkinlikleri bu modern kampüste gerçekleşecek.
+                        </p>
+                        <div class="flex items-center gap-2 text-gray-400 mt-auto text-sm md:text-base">
+                            <i class="fa-solid fa-location-dot text-blue-500"></i>
+                            <span>Maslak, İstanbul</span>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Akış -->
+        <section id="schedule" class="flex flex-col items-center py-30 gap-10 max-md:px-10 max-2xl:px-20 px-60">
+            <h2 class="text-4xl font-bold text-smart-animate text-orange-500">Etkinlik Akışı</h2>
+
+            <div class="w-full max-w-4xl">
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                    <button onclick="switchDay('day1')" id="btn-day1"
+                        class="day-btn active cursor-pointer border border-blue-900/50 bg-[#0B0C25] hover:bg-blue-900/30 text-gray-400 py-4 rounded-lg font-semibold transition-all duration-300">
+                        Cuma (06.03.26)
+                    </button>
+                    <button onclick="switchDay('day2')" id="btn-day2"
+                        class="day-btn cursor-pointer border border-blue-900/50 bg-[#0B0C25] hover:bg-blue-900/30 text-gray-400 py-4 rounded-lg font-semibold transition-all duration-300">
+                        Cumartesi (06.03.26)
+                    </button>
+                    <button onclick="switchDay('day3')" id="btn-day3"
+                        class="day-btn cursor-pointer border border-blue-900/50 bg-[#0B0C25] hover:bg-blue-900/30 text-gray-400 py-4 rounded-lg font-semibold transition-all duration-300">
+                        Pazar (06.03.26)
+                    </button>
                 </div>
+
+                <div id="day1" class="day-content block space-y-3">
+                    <div
+                        class="flex justify-between items-center bg-blue-900/20 p-5 rounded-lg border-l-4 border-blue-500 hover:bg-blue-900/30 transition-colors">
+                        <span class="font-medium text-lg">Kayıt ve Hazırlık</span>
+                        <span class="font-light text-sm opacity-80">09.00 - 10.00</span>
+                    </div>
+                    <div
+                        class="flex justify-between items-center bg-blue-900/20 p-5 rounded-lg border-l-4 border-blue-500 hover:bg-blue-900/30 transition-colors">
+                        <span class="font-medium text-lg">Açılış Konuşması</span>
+                        <span class="font-light text-sm opacity-80">10.00 - 10.30</span>
+                    </div>
+                    <div
+                        class="flex justify-between items-center bg-blue-900/20 p-5 rounded-lg border-l-4 border-blue-500 hover:bg-blue-900/30 transition-colors">
+                        <div>
+                            <div class="text-xs text-blue-400 mb-1 uppercase tracking-wide">Keynote</div>
+                            <span class="font-medium text-lg">"Geleceğin Teknolojileri" - Mert Kado</span>
+                        </div>
+                        <span class="font-light text-sm opacity-80">10.30 - 11.30</span>
+                    </div>
+                    <div
+                        class="flex justify-between items-center bg-blue-900/20 p-5 rounded-lg border-l-4 border-blue-500 hover:bg-blue-900/30 transition-colors">
+                        <span class="font-medium text-lg">Öğle Arası</span>
+                        <span class="font-light text-sm opacity-80">13.30 - 14.30</span>
+                    </div>
+                </div>
+
+                <div id="day2" class="day-content hidden">
+
+                    <div class="mb-6 relative">
+                        <label class="block text-xs text-gray-400 mb-2 uppercase tracking-wider">Sınıf Seçiniz:</label>
+                        <select id="day2-select" onchange="switchTrack('day2')"
+                            class="w-full bg-[#111230] border border-blue-800 text-white py-3 px-4 rounded-lg cursor-pointer focus:outline-none focus:border-blue-500 transition-colors appearance-none">
+                            <option value="ai">Mavi Sınıf</option>
+                            <option value="blockchain">Turuncu Sınıf</option>
+                            <option value="cyber">Kırmızı Sınıf</option>
+                            <option value="mobile">Yeşil Sınıf</option>
+                            <option value="web">Mor Sınıf</option>
+                        </select>
+                    </div>
+
+                    <div id="day2-track-container" class="space-y-3">
+                        <div id="day2-ai" class="track-group block space-y-3">
+                            <div
+                                class="flex justify-between items-center bg-purple-900/20 p-5 rounded-lg border-l-4 border-purple-500">
+                                <span class="font-medium text-lg">AI: Hoşgeldiniz ve Giriş</span>
+                                <span class="font-light text-sm opacity-80">09.00 - 10.00</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center bg-purple-900/20 p-5 rounded-lg border-l-4 border-purple-500">
+                                <span class="font-medium text-lg">"LLM Mimarileri" - Aylin Baba</span>
+                                <span class="font-light text-sm opacity-80">10.00 - 13.00</span>
+                            </div>
+                        </div>
+
+                        <div id="day2-blockchain" class="track-group hidden space-y-3">
+                            <div
+                                class="flex justify-between items-center bg-indigo-900/20 p-5 rounded-lg border-l-4 border-indigo-500">
+                                <span class="font-medium text-lg">Blockchain 101</span>
+                                <span class="font-light text-sm opacity-80">09.00 - 10.00</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center bg-indigo-900/20 p-5 rounded-lg border-l-4 border-indigo-500">
+                                <span class="font-medium text-lg">"Akıllı Kontratlar" - Mert Kado</span>
+                                <span class="font-light text-sm opacity-80">10.00 - 13.00</span>
+                            </div>
+                        </div>
+
+                        <div id="day2-cyber" class="track-group hidden space-y-3">
+                            <div
+                                class="flex justify-between items-center bg-red-900/20 p-5 rounded-lg border-l-4 border-red-500">
+                                <span class="font-medium text-lg">Siber Tehditler Paneli</span>
+                                <span class="font-light text-sm opacity-80">09.00 - 12.00</span>
+                            </div>
+                        </div>
+
+                        <div id="day2-mobile" class="track-group hidden space-y-3">
+                            <div
+                                class="flex justify-between items-center bg-yellow-900/20 p-5 rounded-lg border-l-4 border-yellow-500">
+                                <span class="font-medium text-lg">Flutter ile Mobil Geliştirme</span>
+                                <span class="font-light text-sm opacity-80">09.00 - 12.00</span>
+                            </div>
+                        </div>
+                        <div id="day2-web" class="track-group hidden space-y-3">
+                            <div
+                                class="flex justify-between items-center bg-green-900/20 p-5 rounded-lg border-l-4 border-green-500">
+                                <span class="font-medium text-lg">Modern CSS Teknikleri</span>
+                                <span class="font-light text-sm opacity-80">09.00 - 12.00</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div id="day3" class="day-content hidden">
+
+                    <div class="mb-6 relative">
+                        <label class="block text-xs text-gray-400 mb-2 uppercase tracking-wider">İlgi Alanı
+                            Seçiniz:</label>
+                        <select id="day3-select" onchange="switchTrack('day3')"
+                            class="w-full bg-[#111230] border border-blue-800 text-white py-3 px-4 rounded-lg cursor-pointer focus:outline-none focus:border-blue-500 transition-colors appearance-none">
+                            <option value="ai">Yapay Zeka Projeleri</option>
+                            <option value="blockchain">Blockchain Projeleri</option>
+                            <option value="cyber">CTF Yarışması</option>
+                            <option value="mobile">Mobil Hackathon</option>
+                            <option value="web">Web Atölyesi</option>
+                        </select>
+                    </div>
+
+                    <div id="day3-track-container" class="space-y-3">
+                        <div id="day3-ai" class="track-group block space-y-3">
+                            <div
+                                class="flex justify-between items-center bg-purple-900/20 p-5 rounded-lg border-l-4 border-purple-500">
+                                <span class="font-medium text-lg">AI Proje Sunumları</span>
+                                <span class="font-light text-sm opacity-80">10.00 - 15.00</span>
+                            </div>
+                        </div>
+
+                        <div id="day3-blockchain" class="track-group hidden space-y-3">
+                            <div
+                                class="flex justify-between items-center bg-indigo-900/20 p-5 rounded-lg border-l-4 border-indigo-500">
+                                <span class="font-medium text-lg">DeFi Projeleri</span>
+                                <span class="font-light text-sm opacity-80">10.00 - 15.00</span>
+                            </div>
+                        </div>
+                        <div id="day3-cyber" class="track-group hidden space-y-3">
+                            <div
+                                class="flex justify-between items-center bg-red-900/20 p-5 rounded-lg border-l-4 border-red-500">
+                                <span class="font-medium text-lg">CTF Final</span>
+                                <span class="font-light text-sm opacity-80">10.00 - 15.00</span>
+                            </div>
+                        </div>
+                        <div id="day3-mobile" class="track-group hidden space-y-3">
+                            <div
+                                class="flex justify-between items-center bg-yellow-900/20 p-5 rounded-lg border-l-4 border-yellow-500">
+                                <span class="font-medium text-lg">App Store Deployment</span>
+                                <span class="font-light text-sm opacity-80">10.00 - 15.00</span>
+                            </div>
+                        </div>
+                        <div id="day3-web" class="track-group hidden space-y-3">
+                            <div
+                                class="flex justify-between items-center bg-green-900/20 p-5 rounded-lg border-l-4 border-green-500">
+                                <span class="font-medium text-lg">Next.js İleri Seviye</span>
+                                <span class="font-light text-sm opacity-80">10.00 - 15.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Konuşmacılar Section -->
+        <section id="speakers"
+            class="flex flex-col items-center py-30 gap-20 max-md:px-10 max-2xl:px-20 px-60 bg-blue-900/10">
+            <h2 class="text-4xl font-bold mb-5 text-smart-animate text-orange-500">Konuşmacılarımız</h2>
+
+            <div class="flex flex-wrap justify-center items-center gap-20">
+
+                <div class="flex flex-col justify-start items-center h-86 gap-5 appear-up-animate"
+                    style="animation-delay: 100ms;">
+                    <img alt="Aylin Yalçın" src="https://mockmind-api.uifaces.co/content/human/128.jpg"
+                        class="w-50 h-50 object-cover rounded-full" />
+                    <div class="flex flex-col gap-3 justify-center items-center text-center w-60">
+                        <h3 class="font-bold text-3xl">Aylin Yalçın</h3>
+                        <p class="font-mono uppercase text-md">UI/UX Designer at PixelForge</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-start items-center h-86 gap-5 appear-up-animate"
+                    style="animation-delay: 200ms;">
+                    <img alt="Mert Şahin" src="https://mockmind-api.uifaces.co/content/human/80.jpg"
+                        class="w-50 h-50 object-cover rounded-full" />
+                    <div class="flex flex-col gap-3 justify-center items-center text-center w-60">
+                        <h3 class="font-bold text-3xl">Mert Şahin</h3>
+                        <p class="font-mono uppercase text-md">Backend Engineer at CloudCore</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-start items-center h-86 gap-5 appear-up-animate"
+                    style="animation-delay: 300ms;">
+                    <img alt="Elif Demir" src="https://mockmind-api.uifaces.co/content/human/219.jpg"
+                        class="w-50 h-50 object-cover rounded-full" />
+                    <div class="flex flex-col gap-3 justify-center items-center text-center w-60">
+                        <h3 class="font-bold text-3xl">Elif Demir</h3>
+                        <p class="font-mono uppercase text-md">AI Researcher at NeuralEdge</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-start items-center h-86 gap-5 appear-up-animate"
+                    style="animation-delay: 400ms;">
+                    <img alt="Arda Korkmaz" src="https://mockmind-api.uifaces.co/content/human/104.jpg"
+                        class="w-50 h-50 object-cover rounded-full" />
+                    <div class="flex flex-col gap-3 justify-center items-center text-center w-60">
+                        <h3 class="font-bold text-3xl">Arda Korkmaz</h3>
+                        <p class="font-mono uppercase text-md">Mobile Developer at NovaApps</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-start items-center h-86 gap-5 appear-up-animate"
+                    style="animation-delay: 500ms;">
+                    <img alt="Selin Koç" src="https://mockmind-api.uifaces.co/content/human/125.jpg"
+                        class="w-50 h-50 object-cover rounded-full" />
+                    <div class="flex flex-col gap-3 justify-center items-center text-center w-60">
+                        <h3 class="font-bold text-3xl">Selin Koç</h3>
+                        <p class="font-mono uppercase text-md">Data Scientist at AnalytIQ</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-start items-center h-86 gap-5 appear-up-animate"
+                    style="animation-delay: 600ms;">
+                    <img alt="Efe Yıldırım" src="https://mockmind-api.uifaces.co/content/human/222.jpg"
+                        class="w-50 h-50 object-cover rounded-full" />
+                    <div class="flex flex-col gap-3 justify-center items-center text-center w-60">
+                        <h3 class="font-bold text-3xl">Efe Yıldırım</h3>
+                        <p class="font-mono uppercase text-md">Cybersecurity Specialist at SentinelSec</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-start items-center h-86 gap-5 appear-up-animate"
+                    style="animation-delay: 700ms;">
+                    <img alt="İrem Acar" src="https://mockmind-api.uifaces.co/content/human/108.jpg"
+                        class="w-50 h-50 object-cover rounded-full" />
+                    <div class="flex flex-col gap-3 justify-center items-center text-center w-60">
+                        <h3 class="font-bold text-3xl">İrem Acar</h3>
+                        <p class="font-mono uppercase text-md">Product Manager at Innovexa</p>
+                    </div>
+                </div>
+
+                <div class="flex flex-col justify-start items-center h-86 gap-5 appear-up-animate"
+                    style="animation-delay: 800ms;">
+                    <img alt="Kerem Dinç" src="https://mockmind-api.uifaces.co/content/human/92.jpg"
+                        class="w-50 h-50 object-cover rounded-full" />
+                    <div class="flex flex-col gap-3 justify-center items-center text-center w-60">
+                        <h3 class="font-bold text-3xl">Kerem Dinç</h3>
+                        <p class="font-mono uppercase text-md">DevOps Engineer at SkyOps</p>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="flex flex-col justify-start items-center h-86 gap-5 appear-up-animate"
-                style="animation-delay: 600ms;">
-                <img alt="Efe Yıldırım" src="https://mockmind-api.uifaces.co/content/human/222.jpg"
-                    class="w-50 h-50 object-cover rounded-full" />
-                <div class="flex flex-col gap-3 justify-center items-center text-center w-60">
-                    <h3 class="font-bold text-3xl">Efe Yıldırım</h3>
-                    <p class="font-mono uppercase text-md">Cybersecurity Specialist at SentinelSec</p>
-                </div>
+        </section>
+
+        <!-- Sponsorlar Section -->
+        <section id="sponsors" class="flex flex-col items-center py-20 md:py-30 gap-10 md:gap-16 px-4 md:px-5">
+            <div class="flex flex-col gap-3 justify-center items-center">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-5 text-smart-animate text-orange-500">
+                    Sponsorlarımız</h2>
             </div>
 
-            <div class="flex flex-col justify-start items-center h-86 gap-5 appear-up-animate"
-                style="animation-delay: 700ms;">
-                <img alt="İrem Acar" src="https://mockmind-api.uifaces.co/content/human/108.jpg"
-                    class="w-50 h-50 object-cover rounded-full" />
-                <div class="flex flex-col gap-3 justify-center items-center text-center w-60">
-                    <h3 class="font-bold text-3xl">İrem Acar</h3>
-                    <p class="font-mono uppercase text-md">Product Manager at Innovexa</p>
+            <div class="flex flex-wrap justify-center items-center gap-16 md:gap-24">
+                <!-- Sponsor 1 -->
+                <div class="relative w-64 h-32 group cursor-pointer appear-up-animate" style="animation-delay: 200ms;">
+                    <img src="./img/cscon/buildermare.png" alt="Sponsor 1 Logo"
+                        class="absolute inset-0 w-full h-full object-contain" />
+                </div>
+
+                <!-- Sponsor 2 -->
+                <div class="relative w-64 h-32 group cursor-pointer appear-up-animate" style="animation-delay: 400ms;">
+                    <img src="./img/cscon/icann.png" alt="Sponsor 2 Logo"
+                        class="absolute inset-0 w-full h-full object-contain" />
                 </div>
             </div>
+        </section>
 
-            <div class="flex flex-col justify-start items-center h-86 gap-5 appear-up-animate"
-                style="animation-delay: 800ms;">
-                <img alt="Kerem Dinç" src="https://mockmind-api.uifaces.co/content/human/92.jpg"
-                    class="w-50 h-50 object-cover rounded-full" />
-                <div class="flex flex-col gap-3 justify-center items-center text-center w-60">
-                    <h3 class="font-bold text-3xl">Kerem Dinç</h3>
-                    <p class="font-mono uppercase text-md">DevOps Engineer at SkyOps</p>
-                </div>
+        <!-- Kayıt Formu Section -->
+        <section id="register"
+            class="relative flex flex-col items-center py-16 md:py-30 gap-10 md:gap-16 px-4 md:px-5 overflow-hidden">
+            <!-- Binary Background -->
+            <div class="animated-background">
+                <span>0</span>
             </div>
 
-        </div>
+            <div
+                class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10 md:gap-16 w-full max-w-6xl">
+                <div class="flex flex-col gap-3 flex-1 max-w-2xl text-center lg:text-left appear-up-animate">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-5 text-white">
+                        Sen de CSCON'26da Yerini Al!
+                    </h2>
+                    <p class="text-gray-300 text-base md:text-lg appear-up-animate max-w-3xl">
+                        CSCON'26 konferansına katılarak merak ettiğin konuları sektör profesyonellerinden öğren ve ağını
+                        genişlet.
+                    </p>
+                    <a href="https://forms.gle/DNtMDmvQXBaZPanF6" target="_blank" rel="noopener noreferrer"
+                        class="inline-flex justify-center items-center w-full sm:w-auto bg-orange-500 text-orange-950 font-semibold py-3 px-6 rounded-lg hover:bg-orange-400 transition duration-150 ease-in-out cursor-pointer appear-up-animate mt-4"
+                        style="animation-delay: 200ms;">
+                        Kayıt Formunu Doldur
+                    </a>
+                </div>
 
-    </section>
+                <!-- 3D Form Illustration -->
+                <div class="flex-1 flex justify-center items-center max-w-md lg:max-w-lg appear-up-animate"
+                    style="animation-delay: 300ms;">
+                    <img src="./img/cscon/form.png" alt="Kayıt Formu"
+                        class="w-full h-auto max-h-80 md:max-h-96 object-contain drop-shadow-2xl" />
+                </div>
+            </div>
+        </section>
+
+        <footer class="bg-gray-950 border-t border-gray-800 pt-16 pb-8 text-gray-400 font-sans">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+
+                <div class="flex flex-col items-center justify-center mb-16">
+                    <a href="#" class="opacity-90 hover:opacity-100 transition-opacity duration-300">
+                        <img src="./img/cscon/TrSac.png" alt="CSCON'26 Logo" class="h-16 md:h-20 object-contain">
+                    </a>
+                    <p class="mt-4 text-center max-w-2xl text-gray-500">
+                        Türkiye'nin en prestijli yazılım konferansı.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 border-b border-gray-800 pb-12">
+
+                    <div class="text-center md:text-left">
+                        <h3 class="text-white font-bold text-lg tracking-wider mb-6">CSCON'26</h3>
+                        <ul class="space-y-3">
+                            <li><a href="#about"
+                                    class="hover:text-orange-500 transition-colors duration-200">Hakkında</a>
+                            </li>
+                            <li><a href="#venues"
+                                    class="hover:text-orange-500 transition-colors duration-200">Konumlar</a>
+                            </li>
+                            <li><a href="#schedule"
+                                    class="hover:text-orange-500 transition-colors duration-200">Etkinlik
+                                    Akışı</a></li>
+                            <li><a href="#speakers"
+                                    class="hover:text-orange-500 transition-colors duration-200">Konuşmacılar</a></li>
+                            <li><a href="#sponsors"
+                                    class="hover:text-orange-500 transition-colors duration-200">Sponsorlar</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="text-center md:text-left">
+                        <h3 class="text-white font-bold text-lg tracking-wider mb-6 uppercase">IEEE CS Türkiye SAC</h3>
+                        <div class="flex items-center justify-center md:justify-start gap-4">
+                            <a href="https://www.instagram.com/ieeecstrsac/" target="_blank"
+                                class="w-10 h-10 border border-gray-700 rounded flex items-center justify-center hover:bg-pink-600 hover:border-pink-600 hover:text-white transition-all duration-200">
+                                <i class="fa-brands fa-instagram fa-lg"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/ieeecstrsac/" target="_blank"
+                                class="w-10 h-10 border border-gray-700 rounded flex items-center justify-center hover:bg-blue-600 hover:border-blue-600 hover:text-white transition-all duration-200">
+                                <i class="fa-brands fa-linkedin-in fa-lg"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@IEEEComputerSocietyTurkeySAC/" target="_blank"
+                                class="w-10 h-10 border border-gray-700 rounded flex items-center justify-center hover:bg-red-600 hover:border-red-600 hover:text-white transition-all duration-200">
+                                <i class="fa-brands fa-youtube fa-lg"></i>
+                            </a>
+                            <a href="mailto:cs@ieee.org.tr"
+                                class="w-10 h-10 border border-gray-700 rounded flex items-center justify-center hover:bg-white hover:border-white hover:text-black transition-all duration-200">
+                                <i class="fa-solid fa-envelope fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="text-center md:text-left">
+                        <h3 class="text-white font-bold text-lg tracking-wider mb-6 uppercase">Işık IEEE Öğrenci Kolu
+                        </h3>
+                        <div class="flex items-center justify-center md:justify-start gap-4">
+                            <a href="https://www.instagram.com/isikieee/" target="_blank"
+                                class="w-10 h-10 border border-gray-700 rounded flex items-center justify-center hover:bg-pink-600 hover:border-pink-600 hover:text-white transition-all duration-200">
+                                <i class="fa-brands fa-instagram fa-lg"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/isik-ieee" target="_blank"
+                                class="w-10 h-10 border border-gray-700 rounded flex items-center justify-center hover:bg-blue-600 hover:border-blue-600 hover:text-white transition-all duration-200">
+                                <i class="fa-brands fa-linkedin-in fa-lg"></i>
+                            </a>
+                            <a href="https://isikieee.com.tr/" target="_blank"
+                                class="w-10 h-10 border border-gray-700 rounded flex items-center justify-center hover:bg-orange-500 hover:border-orange-500 hover:text-white transition-all duration-200">
+                                <i class="fa-solid fa-globe fa-lg"></i>
+                            </a>
+                            <a href="mailto:isikieeecs@gmail.com"
+                                class="w-10 h-10 border border-gray-700 rounded flex items-center justify-center hover:bg-white hover:border-white hover:text-black transition-all duration-200">
+                                <i class="fa-solid fa-envelope fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-gray-500">
+                    <p class="text-center md:text-left">
+                        &copy; 2026 IEEE CS TR SAC. Tüm hakları saklıdır.
+                    </p>
+
+                    <div class="flex items-center gap-1">
+                        <span>Designed & Developed by</span>
+                        <a href="https://sefercinar.com" target="_blank"
+                            class="text-gray-400 hover:text-white transition-colors ml-1">Sefer Çınar</a>
+                        <span>&</span>
+                        <a href="https://alpdurak.com.tr" target="_blank"
+                            class="text-gray-400 hover:text-white transition-colors ml-1">Alp Durak</a>.
+                    </div>
+                </div>
+            </div>
+    </main>
+    </footer>
 
     <script>
 
@@ -393,6 +881,15 @@
 
         let lastScrollPos = -301;
 
+        function isParentInView(elem) {
+            const parent = elem.parentElement;
+            if (!parent) return false;
+
+            const rect = parent.getBoundingClientRect();
+
+            return rect.top < window.innerHeight && rect.bottom >= 0;
+        }
+
         // Scroll Events
         document.addEventListener("scroll", function () {
             // Constants
@@ -402,8 +899,6 @@
             if (lastScrollPos - 50 > scrollTop || lastScrollPos + 50 < scrollTop) {
                 lastScrollPos = scrollTop;
             } else return;
-
-            console.log("updated")
 
             // Text Animate
             const runElements = positions.filter((v) => {
@@ -415,32 +910,61 @@
             runElements.forEach((v) => {
                 v.element.classList.add("running");
             });
+
+            // Animated BG Performance
+            const animatedBackgrounds = document.querySelectorAll(".animated-background");
+
+            for (let i = 0; i < animatedBackgrounds.length; i++) {
+                let animatedBackground = animatedBackgrounds[i];
+
+                if (animatedBackground.style.display == "none") {
+                    if (isParentInView(animatedBackground)) {
+                        animatedBackground.style.display = "block";
+
+                        if (animatedBackground.childElementCount < 10) {
+                            // trigger population 
+                            window.dispatchEvent(new Event("resize"));
+                        }
+                    }
+                } else {
+                    if (!isParentInView(animatedBackground)) {
+                        animatedBackground.style.display = "none";
+                    }
+                }
+            }
         })
 
         const customAnimationDuration = 2;
 
         // Animated Background
         window.addEventListener("resize", function () {
-            const animatedBackground = document.querySelector(".animated-background");
-            const textBounds = animatedBackground.children[0].getBoundingClientRect();
-            const backgroundBounds = animatedBackground.getBoundingClientRect();
-            const cols = Math.ceil(backgroundBounds.width / textBounds.width);
-            const rows = Math.ceil(backgroundBounds.height / textBounds.height);
+            const animatedBackgrounds = document.querySelectorAll(".animated-background");
 
-            animatedBackground.innerHTML = "";
+            for (let i = 0; i < animatedBackgrounds.length; i++) {
+                let animatedBackground = animatedBackgrounds[i];
 
-            for (let r = 0; r < rows; r++) {
-                for (let c = 0; c < cols; c++) {
-                    const span = document.createElement("span");
-                    const duration = Math.random() * 4;
+                if (animatedBackground.style.display == "none") continue;
 
-                    span.innerText = Math.random() > 0.5 ? "0" : "1";
-                    span.style.top = `${r * textBounds.height}px`;
-                    span.style.left = `${c * textBounds.width}px`;
-                    span.style.animationDelay = `${duration}s`;
-                    span.style.animationDuration = `${duration + customAnimationDuration}s`;
+                const textBounds = animatedBackground.children[0].getBoundingClientRect();
+                const backgroundBounds = animatedBackground.getBoundingClientRect();
+                const cols = Math.ceil(backgroundBounds.width / textBounds.width);
+                const rows = Math.ceil(backgroundBounds.height / textBounds.height);
 
-                    animatedBackground.appendChild(span);
+                animatedBackground.innerHTML = "";
+
+                for (let r = 0; r < rows; r++) {
+                    for (let c = 0; c < cols; c++) {
+                        const span = document.createElement("span");
+                        const duration = Math.random() * 4;
+
+                        span.innerText = Math.random() > 0.5 ? "0" : "1";
+                        span.style.top = `${r * textBounds.height}px`;
+                        span.style.left = `${c * textBounds.width}px`;
+                        span.style.animationDelay = `${duration}s`;
+                        span.style.animationDuration = `${duration + customAnimationDuration}s`;
+
+                        animatedBackground.appendChild(span);
+                    }
                 }
             }
         })
@@ -465,6 +989,45 @@
                 await delay(500);
             }
             navPanel.style.display = navPanelOn ? "flex" : "none";
+        }
+
+        // Event Flow Buttons
+        function switchDay(dayId) {
+            // 1. Tüm gün içeriklerini gizle
+            document.querySelectorAll('.day-content').forEach(el => el.classList.add('hidden'));
+
+            // 2. Seçilen günü göster
+            document.getElementById(dayId).classList.remove('hidden');
+
+            // 3. Buton stillerini güncelle
+            document.querySelectorAll('.day-btn').forEach(btn => {
+                btn.classList.remove('active');
+                btn.classList.add('text-gray-400', 'bg-[#0B0C25]'); // Pasif stil
+            });
+
+            const activeBtn = document.getElementById('btn-' + dayId);
+            activeBtn.classList.add('active');
+            activeBtn.classList.remove('text-gray-400');
+        }
+
+        function switchTrack(dayId) {
+            // Hangi select elementindeyiz?
+            const selectElement = document.getElementById(dayId + '-select');
+            const selectedValue = selectElement.value;
+
+            // O güne ait tüm track gruplarını bul ve gizle
+            const container = document.getElementById(dayId);
+            container.querySelectorAll('.track-group').forEach(group => {
+                group.classList.add('hidden');
+                group.classList.remove('block');
+            });
+
+            // Seçilen değeri göster
+            const targetGroup = document.getElementById(dayId + '-' + selectedValue);
+            if (targetGroup) {
+                targetGroup.classList.remove('hidden');
+                targetGroup.classList.add('block');
+            }
         }
     </script>
 </body>
