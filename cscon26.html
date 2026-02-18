@@ -260,8 +260,8 @@
                     class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Konumlar</a>
                 <a href="#schedule"
                     class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Etkinlik Akışı</a>
-                <a href="#speakers"
-                    class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Konuşmacılar</a>
+                <!-- <a href="#speakers"
+                    class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Konuşmacılar</a> -->
                 <a href="#sponsors"
                     class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Sponsorlar</a>
             </div>
@@ -286,8 +286,8 @@
             <a href="#schedule"
                 class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Etkinlik
                 Akışı</a>
-            <a href="#speakers"
-                class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Konuşmacılar</a>
+            <!-- <a href="#speakers"
+                class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Konuşmacılar</a> -->
 
             <a href="#sponsors"
                 class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Sponsorlar</a>
@@ -438,105 +438,250 @@
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
                     <button onclick="switchDay('day1')" id="btn-day1"
                         class="day-btn active cursor-pointer border border-blue-900/50 bg-[#0B0C25] hover:bg-blue-900/30 text-gray-400 py-4 rounded-lg font-semibold transition-all duration-300">
-                        Cuma (06.03.26)
+                        Cuma (1. Gün)
                     </button>
                     <button onclick="switchDay('day2')" id="btn-day2"
                         class="day-btn cursor-pointer border border-blue-900/50 bg-[#0B0C25] hover:bg-blue-900/30 text-gray-400 py-4 rounded-lg font-semibold transition-all duration-300">
-                        Cumartesi (06.03.26)
+                        Cumartesi (2. Gün)
                     </button>
                     <button onclick="switchDay('day3')" id="btn-day3"
                         class="day-btn cursor-pointer border border-blue-900/50 bg-[#0B0C25] hover:bg-blue-900/30 text-gray-400 py-4 rounded-lg font-semibold transition-all duration-300">
-                        Pazar (06.03.26)
+                        Pazar (3. Gün)
                     </button>
                 </div>
 
                 <div id="day1" class="day-content block space-y-3">
                     <div
-                        class="flex justify-between items-center bg-blue-900/20 p-5 rounded-lg border-l-4 border-blue-500 hover:bg-blue-900/30 transition-colors">
-                        <span class="font-medium text-lg">Kayıt ve Hazırlık</span>
-                        <span class="font-light text-sm opacity-80">09.00 - 10.00</span>
-                    </div>
-                    <div
-                        class="flex justify-between items-center bg-blue-900/20 p-5 rounded-lg border-l-4 border-blue-500 hover:bg-blue-900/30 transition-colors">
-                        <span class="font-medium text-lg">Açılış Konuşması</span>
+                        class="flex justify-between items-center bg-blue-900/20 p-3 pl-6 pr-6 rounded-lg hover:bg-blue-900/30 transition-colors">
+                        <div class="text-xs mb-1 uppercase tracking-wide">Açılış Konuşmaları</div>
                         <span class="font-light text-sm opacity-80">10.00 - 10.30</span>
                     </div>
+
                     <div
-                        class="flex justify-between items-center bg-blue-900/20 p-5 rounded-lg border-l-4 border-blue-500 hover:bg-blue-900/30 transition-colors">
+                        class="flex justify-between items-center bg-blue-900/20 p-5 rounded-lg border-l-4 border-blue-500">
                         <div>
-                            <div class="text-xs text-blue-400 mb-1 uppercase tracking-wide">Keynote</div>
-                            <span class="font-medium text-lg">"Geleceğin Teknolojileri" - Mert Kado</span>
+                            <div class="text-xs mb-1 text-blue-400 uppercase tracking-wide">Barış Çeliktaş</div>
+                            <span class="font-medium text-lg">Post-Quantum Crypto Migration Roadmap</span>
                         </div>
-                        <span class="font-light text-sm opacity-80">10.30 - 11.30</span>
+                        <span class="font-light text-sm opacity-80">10.30 - 11.00</span>
                     </div>
+
                     <div
-                        class="flex justify-between items-center bg-blue-900/20 p-5 rounded-lg border-l-4 border-blue-500 hover:bg-blue-900/30 transition-colors">
-                        <span class="font-medium text-lg">Öğle Arası</span>
+                        class="flex justify-between items-center bg-blue-900/20 p-5 rounded-lg border-l-4 border-blue-500">
+                        <div>
+                            <div class="text-xs mb-1 text-blue-400 uppercase tracking-wide">Hakkı İbrahim Ünyeli</div>
+                            <span class="font-medium text-lg">CEO ile Buluşma: İlham veren bir kariyer</span>
+                        </div>
+                        <span class="font-light text-sm opacity-80">11.00 - 11.30</span>
+                    </div>
+
+                    <div
+                        class="flex justify-between items-center bg-blue-900/20 p-3 pl-6 pr-6 rounded-lg hover:bg-blue-900/30 transition-colors">
+                        <div class="text-xs mb-1 uppercase tracking-wide">Mola (15dk)</div>
+                        <span class="font-light text-sm opacity-80">11.30 - 11.45</span>
+                    </div>
+
+                    <div
+                        class="flex justify-between items-center bg-blue-900/20 p-5 rounded-lg border-l-4 border-blue-500">
+                        <div>
+                            <div class="text-xs mb-1 text-blue-400 uppercase tracking-wide">Gökçen Üstündağ - Mustafa
+                                Tar...</div>
+                            <span class="font-medium text-lg">Girişimcilik ve İnovasyon | Girişimciliğin Hukuku</span>
+                        </div>
+                        <span class="font-light text-sm opacity-80">11.45 - 12.45</span>
+                    </div>
+
+                    <div
+                        class="flex justify-between items-center bg-blue-900/20 p-3 pl-6 pr-6 rounded-lg hover:bg-blue-900/30 transition-colors">
+                        <div class="text-xs mb-1 uppercase tracking-wide">Mola (15dk)</div>
+                        <span class="font-light text-sm opacity-80">12.45 - 13.00</span>
+                    </div>
+
+                    <div
+                        class="flex justify-between items-center bg-blue-900/20 p-5 rounded-lg border-l-4 border-blue-500">
+                        <span class="font-medium text-lg">ICANN</span>
+                        <span class="font-light text-sm opacity-80">13.00 - 13.30</span>
+                    </div>
+
+                    <div
+                        class="flex justify-between items-center bg-blue-900/20 p-3 pl-6 pr-6 rounded-lg hover:bg-blue-900/30 transition-colors">
+                        <div class="text-xs mb-1 uppercase tracking-wide">Öğle Molası</div>
                         <span class="font-light text-sm opacity-80">13.30 - 14.30</span>
+                    </div>
+
+                    <div
+                        class="flex justify-between items-center bg-blue-900/20 p-5 rounded-lg border-l-4 border-blue-500">
+                        <div>
+                            <div class="text-xs mb-1 text-blue-400 uppercase tracking-wide">Kayra Uzun</div>
+                            <span class="font-medium text-lg">Teknoloji Oturumu</span>
+                        </div>
+                        <span class="font-light text-sm opacity-80">14.30 - 15.30</span>
+                    </div>
+
+                    <div
+                        class="flex justify-between items-center bg-blue-900/20 p-3 pl-6 pr-6 rounded-lg hover:bg-blue-900/30 transition-colors">
+                        <div class="text-xs mb-1 uppercase tracking-wide">Mola (15dk)</div>
+                        <span class="font-light text-sm opacity-80">15.30 - 15.45</span>
+                    </div>
+
+                    <div
+                        class="flex justify-between items-center bg-blue-900/20 p-5 rounded-lg border-l-4 border-blue-500">
+                        <div>
+                            <div class="text-xs mb-1 text-blue-400 uppercase tracking-wide">Fatih Kadir Akın</div>
+                            <span class="font-medium text-lg">Github Star, DevRel Manager - Teknasyon</span>
+                        </div>
+                        <span class="font-light text-sm opacity-80">15.45 - 16.45</span>
+                    </div>
+
+                    <div
+                        class="flex justify-between items-center bg-blue-900/20 p-3 pl-6 pr-6 rounded-lg hover:bg-blue-900/30 transition-colors">
+                        <div class="text-xs mb-1 uppercase tracking-wide">Mola (15dk)</div>
+                        <span class="font-light text-sm opacity-80">16.45 - 17.00</span>
+                    </div>
+
+                    <div
+                        class="flex justify-between items-center bg-blue-900/20 p-5 rounded-lg border-l-4 border-blue-500">
+                        <span class="font-medium text-lg">Networking</span>
+                        <span class="font-light text-sm opacity-80">17.00 - 17.30</span>
+                    </div>
+
+                    <div
+                        class="flex justify-between items-center bg-blue-900/20 p-3 pl-6 pr-6 rounded-lg hover:bg-blue-900/30 transition-colors">
+                        <div class="text-xs mb-1 uppercase tracking-wide">Kapanış Konuşmaları</div>
+                        <span class="font-light text-sm opacity-80">17.30 - 17.50</span>
                     </div>
                 </div>
 
                 <div id="day2" class="day-content hidden">
-
                     <div class="mb-6 relative">
                         <label class="block text-xs text-gray-400 mb-2 uppercase tracking-wider">Sınıf Seçiniz:</label>
                         <select id="day2-select" onchange="switchTrack('day2')"
                             class="w-full bg-[#111230] border border-blue-800 text-white py-3 px-4 rounded-lg cursor-pointer focus:outline-none focus:border-blue-500 transition-colors appearance-none">
-                            <option value="ai">Mavi Sınıf</option>
-                            <option value="blockchain">Turuncu Sınıf</option>
-                            <option value="cyber">Kırmızı Sınıf</option>
-                            <option value="mobile">Yeşil Sınıf</option>
-                            <option value="web">Mor Sınıf</option>
+                            <option value="orange">Turuncu Sınıf (Cloud / YZ)</option>
+                            <option value="blue">Mavi Sınıf (YZ / RPA)</option>
+                            <option value="red">Kırmızı Sınıf (Backend / IoT)</option>
+                            <option value="green">Yeşil Sınıf (BuilderMare)</option>
+                            <option value="purple">Mor Sınıf (Kuantum / Mobil)</option>
                         </select>
                     </div>
 
                     <div id="day2-track-container" class="space-y-3">
-                        <div id="day2-ai" class="track-group block space-y-3">
+
+                        <div id="day2-orange" class="track-group block space-y-3">
                             <div
-                                class="flex justify-between items-center bg-purple-900/20 p-5 rounded-lg border-l-4 border-purple-500">
-                                <span class="font-medium text-lg">AI: Hoşgeldiniz ve Giriş</span>
-                                <span class="font-light text-sm opacity-80">09.00 - 10.00</span>
+                                class="flex justify-between items-center bg-orange-900/20 p-5 rounded-lg border-l-4 border-orange-500">
+                                <div>
+                                    <div class="text-xs mb-1 text-orange-400 uppercase tracking-wide">Mustafa Özdemir
+                                    </div>
+                                    <span class="font-medium text-lg">Cloud</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">10.00 - 13.00</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-orange-900/20 p-3 pl-6 pr-6 rounded-lg">
+                                <div class="text-xs mb-1 uppercase tracking-wide">Öğle Arası</div>
+                                <span class="font-light text-sm opacity-80">13.00 - 14.00</span>
                             </div>
                             <div
-                                class="flex justify-between items-center bg-purple-900/20 p-5 rounded-lg border-l-4 border-purple-500">
-                                <span class="font-medium text-lg">"LLM Mimarileri" - Aylin Baba</span>
-                                <span class="font-light text-sm opacity-80">10.00 - 13.00</span>
+                                class="flex justify-between items-center bg-orange-900/20 p-5 rounded-lg border-l-4 border-orange-500">
+                                <div>
+                                    <div class="text-xs mb-1 text-orange-400 uppercase tracking-wide">Berhan Türkü Ay
+                                    </div>
+                                    <span class="font-medium text-lg">Yapay Zeka</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">14.00 - 17.00</span>
                             </div>
                         </div>
 
-                        <div id="day2-blockchain" class="track-group hidden space-y-3">
+                        <div id="day2-blue" class="track-group hidden space-y-3">
                             <div
-                                class="flex justify-between items-center bg-indigo-900/20 p-5 rounded-lg border-l-4 border-indigo-500">
-                                <span class="font-medium text-lg">Blockchain 101</span>
-                                <span class="font-light text-sm opacity-80">09.00 - 10.00</span>
+                                class="flex justify-between items-center bg-blue-900/20 p-5 rounded-lg border-l-4 border-blue-500">
+                                <div>
+                                    <div class="text-xs mb-1 text-blue-400 uppercase tracking-wide">Harun Seyhan</div>
+                                    <span class="font-medium text-lg">Yapay Zeka</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">10.00 - 13.00</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-blue-900/20 p-3 pl-6 pr-6 rounded-lg">
+                                <div class="text-xs mb-1 uppercase tracking-wide">Öğle Arası</div>
+                                <span class="font-light text-sm opacity-80">13.00 - 14.00</span>
                             </div>
                             <div
-                                class="flex justify-between items-center bg-indigo-900/20 p-5 rounded-lg border-l-4 border-indigo-500">
-                                <span class="font-medium text-lg">"Akıllı Kontratlar" - Mert Kado</span>
-                                <span class="font-light text-sm opacity-80">10.00 - 13.00</span>
+                                class="flex justify-between items-center bg-blue-900/20 p-5 rounded-lg border-l-4 border-blue-500">
+                                <div>
+                                    <div class="text-xs mb-1 text-blue-400 uppercase tracking-wide">Burçin Memoğlu</div>
+                                    <span class="font-medium text-lg">RPA</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">14.00 - 17.00</span>
                             </div>
                         </div>
 
-                        <div id="day2-cyber" class="track-group hidden space-y-3">
+                        <div id="day2-red" class="track-group hidden space-y-3">
                             <div
                                 class="flex justify-between items-center bg-red-900/20 p-5 rounded-lg border-l-4 border-red-500">
-                                <span class="font-medium text-lg">Siber Tehditler Paneli</span>
-                                <span class="font-light text-sm opacity-80">09.00 - 12.00</span>
+                                <div>
+                                    <div class="text-xs mb-1 text-red-400 uppercase tracking-wide">Emre Savcı</div>
+                                    <span class="font-medium text-lg">Backend</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">10.00 - 13.00</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-red-900/20 p-3 pl-6 pr-6 rounded-lg">
+                                <div class="text-xs mb-1 uppercase tracking-wide">Öğle Arası</div>
+                                <span class="font-light text-sm opacity-80">13.00 - 14.00</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center bg-red-900/20 p-5 rounded-lg border-l-4 border-red-500">
+                                <div>
+                                    <div class="text-xs mb-1 text-red-400 uppercase tracking-wide">Talha Çamlıca</div>
+                                    <span class="font-medium text-lg">IoT</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">14.00 - 17.00</span>
                             </div>
                         </div>
 
-                        <div id="day2-mobile" class="track-group hidden space-y-3">
-                            <div
-                                class="flex justify-between items-center bg-yellow-900/20 p-5 rounded-lg border-l-4 border-yellow-500">
-                                <span class="font-medium text-lg">Flutter ile Mobil Geliştirme</span>
-                                <span class="font-light text-sm opacity-80">09.00 - 12.00</span>
-                            </div>
-                        </div>
-                        <div id="day2-web" class="track-group hidden space-y-3">
+                        <div id="day2-green" class="track-group hidden space-y-3">
                             <div
                                 class="flex justify-between items-center bg-green-900/20 p-5 rounded-lg border-l-4 border-green-500">
-                                <span class="font-medium text-lg">Modern CSS Teknikleri</span>
-                                <span class="font-light text-sm opacity-80">09.00 - 12.00</span>
+                                <div>
+                                    <div class="text-xs mb-1 text-green-400 uppercase tracking-wide">Veli Uysal</div>
+                                    <span class="font-medium text-lg">BuilderMare</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">10.00 - 13.00</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-green-900/20 p-3 pl-6 pr-6 rounded-lg">
+                                <div class="text-xs mb-1 uppercase tracking-wide">Öğle Arası</div>
+                                <span class="font-light text-sm opacity-80">13.00 - 14.00</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center bg-green-900/20 p-5 rounded-lg border-l-4 border-green-500">
+                                <div>
+                                    <div class="text-xs mb-1 text-green-400 uppercase tracking-wide">Veli Uysal</div>
+                                    <span class="font-medium text-lg">BuilderMare</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">14.00 - 17.00</span>
+                            </div>
+                        </div>
+
+                        <div id="day2-purple" class="track-group hidden space-y-3">
+                            <div
+                                class="flex justify-between items-center bg-purple-900/20 p-5 rounded-lg border-l-4 border-purple-500">
+                                <div>
+                                    <div class="text-xs mb-1 text-purple-400 uppercase tracking-wide">Batuhan Hangül
+                                    </div>
+                                    <span class="font-medium text-lg">Kuantum</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">10.00 - 13.00</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-purple-900/20 p-3 pl-6 pr-6 rounded-lg">
+                                <div class="text-xs mb-1 uppercase tracking-wide">Öğle Arası</div>
+                                <span class="font-light text-sm opacity-80">13.00 - 14.00</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center bg-purple-900/20 p-5 rounded-lg border-l-4 border-purple-500">
+                                <div>
+                                    <div class="text-xs mb-1 text-purple-400 uppercase tracking-wide">Utku Erdemir</div>
+                                    <span class="font-medium text-lg">Mobil</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">14.00 - 17.00</span>
                             </div>
                         </div>
 
@@ -544,57 +689,141 @@
                 </div>
 
                 <div id="day3" class="day-content hidden">
-
                     <div class="mb-6 relative">
-                        <label class="block text-xs text-gray-400 mb-2 uppercase tracking-wider">İlgi Alanı
-                            Seçiniz:</label>
+                        <label class="block text-xs text-gray-400 mb-2 uppercase tracking-wider">Sınıf Seçiniz:</label>
                         <select id="day3-select" onchange="switchTrack('day3')"
                             class="w-full bg-[#111230] border border-blue-800 text-white py-3 px-4 rounded-lg cursor-pointer focus:outline-none focus:border-blue-500 transition-colors appearance-none">
-                            <option value="ai">Yapay Zeka Projeleri</option>
-                            <option value="blockchain">Blockchain Projeleri</option>
-                            <option value="cyber">CTF Yarışması</option>
-                            <option value="mobile">Mobil Hackathon</option>
-                            <option value="web">Web Atölyesi</option>
+                            <option value="orange">Turuncu Sınıf (Sistem Yönt.)</option>
+                            <option value="blue">Mavi Sınıf (AWS+AI / Oyun)</option>
+                            <option value="red">Kırmızı Sınıf (Siber Güv. / YZ)</option>
+                            <option value="green">Yeşil Sınıf (RUST / Frontend)</option>
+                            <option value="purple">Mor Sınıf (Kiro / İş Analist)</option>
                         </select>
                     </div>
 
                     <div id="day3-track-container" class="space-y-3">
-                        <div id="day3-ai" class="track-group block space-y-3">
+
+                        <div id="day3-orange" class="track-group block space-y-3">
                             <div
-                                class="flex justify-between items-center bg-purple-900/20 p-5 rounded-lg border-l-4 border-purple-500">
-                                <span class="font-medium text-lg">AI Proje Sunumları</span>
-                                <span class="font-light text-sm opacity-80">10.00 - 15.00</span>
+                                class="flex justify-between items-center bg-orange-900/20 p-5 rounded-lg border-l-4 border-orange-500">
+                                <div>
+                                    <div class="text-xs mb-1 text-orange-400 uppercase tracking-wide">Şenol Aldıbaş
+                                    </div>
+                                    <span class="font-medium text-lg">Sistem Yönetimi</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">10.00 - 13.00</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-orange-900/20 p-3 pl-6 pr-6 rounded-lg">
+                                <div class="text-xs mb-1 uppercase tracking-wide">Öğle Arası</div>
+                                <span class="font-light text-sm opacity-80">13.00 - 14.00</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center bg-orange-900/20 p-5 rounded-lg border-l-4 border-orange-500">
+                                <div>
+                                    <div class="text-xs mb-1 text-orange-400 uppercase tracking-wide">Şenol Aldıbaş
+                                    </div>
+                                    <span class="font-medium text-lg">Sistem Yönetimi</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">14.00 - 17.00</span>
                             </div>
                         </div>
 
-                        <div id="day3-blockchain" class="track-group hidden space-y-3">
+                        <div id="day3-blue" class="track-group hidden space-y-3">
                             <div
-                                class="flex justify-between items-center bg-indigo-900/20 p-5 rounded-lg border-l-4 border-indigo-500">
-                                <span class="font-medium text-lg">DeFi Projeleri</span>
-                                <span class="font-light text-sm opacity-80">10.00 - 15.00</span>
+                                class="flex justify-between items-center bg-blue-900/20 p-5 rounded-lg border-l-4 border-blue-500">
+                                <div>
+                                    <div class="text-xs mb-1 text-blue-400 uppercase tracking-wide">Emre Ersoy</div>
+                                    <span class="font-medium text-lg">AWS+AI</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">10.00 - 13.00</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-blue-900/20 p-3 pl-6 pr-6 rounded-lg">
+                                <div class="text-xs mb-1 uppercase tracking-wide">Öğle Arası</div>
+                                <span class="font-light text-sm opacity-80">13.00 - 14.00</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center bg-blue-900/20 p-5 rounded-lg border-l-4 border-blue-500">
+                                <div>
+                                    <div class="text-xs mb-1 text-blue-400 uppercase tracking-wide">Ali Eren Kayhan
+                                    </div>
+                                    <span class="font-medium text-lg">Oyun Geliştirme</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">14.00 - 17.00</span>
                             </div>
                         </div>
-                        <div id="day3-cyber" class="track-group hidden space-y-3">
+
+                        <div id="day3-red" class="track-group hidden space-y-3">
                             <div
                                 class="flex justify-between items-center bg-red-900/20 p-5 rounded-lg border-l-4 border-red-500">
-                                <span class="font-medium text-lg">CTF Final</span>
-                                <span class="font-light text-sm opacity-80">10.00 - 15.00</span>
+                                <div>
+                                    <div class="text-xs mb-1 text-red-400 uppercase tracking-wide">Ahmet Ali Süzen</div>
+                                    <span class="font-medium text-lg">Siber Güvenlik</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">10.00 - 13.00</span>
                             </div>
-                        </div>
-                        <div id="day3-mobile" class="track-group hidden space-y-3">
+                            <div class="flex justify-between items-center bg-red-900/20 p-3 pl-6 pr-6 rounded-lg">
+                                <div class="text-xs mb-1 uppercase tracking-wide">Öğle Arası</div>
+                                <span class="font-light text-sm opacity-80">13.00 - 14.00</span>
+                            </div>
                             <div
-                                class="flex justify-between items-center bg-yellow-900/20 p-5 rounded-lg border-l-4 border-yellow-500">
-                                <span class="font-medium text-lg">App Store Deployment</span>
-                                <span class="font-light text-sm opacity-80">10.00 - 15.00</span>
+                                class="flex justify-between items-center bg-red-900/20 p-5 rounded-lg border-l-4 border-red-500">
+                                <div>
+                                    <div class="text-xs mb-1 text-red-400 uppercase tracking-wide">Barış Usta</div>
+                                    <span class="font-medium text-lg">Yapay Zeka</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">14.00 - 17.00</span>
                             </div>
                         </div>
-                        <div id="day3-web" class="track-group hidden space-y-3">
+
+                        <div id="day3-green" class="track-group hidden space-y-3">
                             <div
                                 class="flex justify-between items-center bg-green-900/20 p-5 rounded-lg border-l-4 border-green-500">
-                                <span class="font-medium text-lg">Next.js İleri Seviye</span>
-                                <span class="font-light text-sm opacity-80">10.00 - 15.00</span>
+                                <div>
+                                    <div class="text-xs mb-1 text-green-400 uppercase tracking-wide">--</div>
+                                    <span class="font-medium text-lg">RUST</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">10.00 - 13.00</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-green-900/20 p-3 pl-6 pr-6 rounded-lg">
+                                <div class="text-xs mb-1 uppercase tracking-wide">Öğle Arası</div>
+                                <span class="font-light text-sm opacity-80">13.00 - 14.00</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center bg-green-900/20 p-5 rounded-lg border-l-4 border-green-500">
+                                <div>
+                                    <div class="text-xs mb-1 text-green-400 uppercase tracking-wide">Ahmet Enes Keçeci
+                                    </div>
+                                    <span class="font-medium text-lg">Frontend</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">14.00 - 17.00</span>
                             </div>
                         </div>
+
+                        <div id="day3-purple" class="track-group hidden space-y-3">
+                            <div
+                                class="flex justify-between items-center bg-purple-900/20 p-5 rounded-lg border-l-4 border-purple-500">
+                                <div>
+                                    <div class="text-xs mb-1 text-purple-400 uppercase tracking-wide">Feyza Demirel
+                                    </div>
+                                    <span class="font-medium text-lg">Kiro Workshop</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">10.00 - 13.00</span>
+                            </div>
+                            <div class="flex justify-between items-center bg-purple-900/20 p-3 pl-6 pr-6 rounded-lg">
+                                <div class="text-xs mb-1 uppercase tracking-wide">Öğle Arası</div>
+                                <span class="font-light text-sm opacity-80">13.00 - 14.00</span>
+                            </div>
+                            <div
+                                class="flex justify-between items-center bg-purple-900/20 p-5 rounded-lg border-l-4 border-purple-500">
+                                <div>
+                                    <div class="text-xs mb-1 text-purple-400 uppercase tracking-wide">M. Göker Sarp
+                                    </div>
+                                    <span class="font-medium text-lg">İş Analistliği</span>
+                                </div>
+                                <span class="font-light text-sm opacity-80">14.00 - 17.00</span>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
 
@@ -602,7 +831,7 @@
         </section>
 
         <!-- Konuşmacılar Section -->
-        <section id="speakers"
+        <!-- <section id="speakers"
             class="flex flex-col items-center py-30 gap-20 max-md:px-10 max-2xl:px-20 px-60 bg-blue-900/10">
             <h2 class="text-4xl font-bold mb-5 text-smart-animate text-orange-500">Konuşmacılarımız</h2>
 
@@ -690,7 +919,7 @@
 
             </div>
 
-        </section>
+        </section> -->
 
         <!-- Sponsorlar Section -->
         <section id="sponsors" class="flex flex-col items-center py-20 md:py-30 gap-10 md:gap-16 px-4 md:px-5">
@@ -702,13 +931,19 @@
             <div class="flex flex-wrap justify-center items-center gap-16 md:gap-24">
                 <!-- Sponsor 1 -->
                 <div class="relative w-64 h-32 group cursor-pointer appear-up-animate" style="animation-delay: 200ms;">
-                    <img src="./img/cscon/buildermare.png" alt="Sponsor 1 Logo"
+                    <img src="./img/cscon/buildermare.png" alt="Buildermare Logo"
+                        class="absolute inset-0 w-full h-full object-contain" />
+                </div>
+
+                <!-- Sponsor 3 -->
+                <div class="relative w-64 h-32 group cursor-pointer appear-up-animate">
+                    <img src="./img/cscon/trrc.png" alt="Türkiye Rust Community Logo"
                         class="absolute inset-0 w-full h-full object-contain" />
                 </div>
 
                 <!-- Sponsor 2 -->
-                <div class="relative w-64 h-32 group cursor-pointer appear-up-animate" style="animation-delay: 400ms;">
-                    <img src="./img/cscon/icann.png" alt="Sponsor 2 Logo"
+                <div class="relative w-64 h-32 group cursor-pointer appear-up-animate" style="animation-delay: 200ms;">
+                    <img src="./img/cscon/icann.png" alt="ICANN Logo"
                         class="absolute inset-0 w-full h-full object-contain" />
                 </div>
             </div>
@@ -724,8 +959,8 @@
 
             <div
                 class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-10 md:gap-16 w-full max-w-6xl">
-                <div class="flex flex-col gap-3 flex-1 max-w-2xl text-center lg:text-left appear-up-animate">
-                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-5 text-white">
+                <div class="flex flex-col gap-3 flex-1 max-w-2xl text-center lg:text-left">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 md:mb-5 text-white text-smart-animate">
                         Sen de CSCON'26da Yerini Al!
                     </h2>
                     <p class="text-gray-300 text-base md:text-lg appear-up-animate max-w-3xl">
@@ -774,8 +1009,8 @@
                             <li><a href="#schedule"
                                     class="hover:text-orange-500 transition-colors duration-200">Etkinlik
                                     Akışı</a></li>
-                            <li><a href="#speakers"
-                                    class="hover:text-orange-500 transition-colors duration-200">Konuşmacılar</a></li>
+                            <!-- <li><a href="#speakers"
+                                    class="hover:text-orange-500 transition-colors duration-200">Konuşmacılar</a></li> -->
                             <li><a href="#sponsors"
                                     class="hover:text-orange-500 transition-colors duration-200">Sponsorlar</a></li>
                         </ul>
