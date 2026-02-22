@@ -5,30 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="CSCON'26, Işık Üniversitesi IEEE Öğrenci Kolu ev sahipliğinde düzenlenen Türkiye'nin en prestijli yazılım ve teknoloji konferansıdır. Sektör liderleri, workshoplar ve networking fırsatları sizi bekliyor.">
+        content="CSCON'26, Işık Üniversitesi IEEE Öğrenci Kolu ev sahipliğinde düzenlenen Türkiye'nin en prestijli yazılım konferansıdır. 6-8 Mart'ta yerinizi alın!">
     <meta name="keywords"
         content="CSCON, CSCON'26, IEEE, Işık Üniversitesi, yazılım konferansı, teknoloji, bilgisayar mühendisliği, workshop, Sefer Çınar, Alp Durak, Computer Society">
     <meta name="author" content="Işık Üniversitesi IEEE Öğrenci Kolu">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://isikieee.com.tr/cscon26">
 
-    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="tr_TR">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://isikieee.com.tr/cscon26">
-    <meta property="og:title" content="CSCON'26 | Işık Üniversitesi IEEE Öğrenci Kolu">
+    <meta property="og:title" content="CSCON'26 - Türkiye'nin En Prestijli Yazılım Konferansı">
     <meta property="og:description"
         content="Türkiye'nin en prestijli yazılım konferansı CSCON'26, 6-8 Mart 2026 tarihlerinde Işık Üniversitesi ev sahipliğinde gerçekleşecek.">
     <meta property="og:image" content="https://isikieee.com.tr/img/cscon/banner.png">
 
-    <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://isikieee.com.tr/cscon26">
-    <meta property="twitter:title" content="CSCON'26 | Işık Üniversitesi IEEE Öğrenci Kolu">
+    <meta property="twitter:title" content="CSCON'26 - Yazılım ve Teknoloji Konferansı">
     <meta property="twitter:description"
         content="Türkiye'nin en prestijli yazılım konferansı CSCON'26, 6-8 Mart 2026 tarihlerinde Işık Üniversitesi ev sahipliğinde gerçekleşecek.">
     <meta property="twitter:image" content="https://isikieee.com.tr/img/cscon/banner.png">
 
-    <!-- Favicon -->
     <link rel="apple-touch-icon" sizes="57x57" href="/img/cscon/favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="/img/cscon/favicon/apple-icon-60x60.png">
     <link rel="apple-touch-icon" sizes="72x72" href="/img/cscon/favicon/apple-icon-72x72.png">
@@ -47,11 +45,10 @@
     <meta name="msapplication-TileImage" content="/img/cscon/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#faa41a">
 
-    <title>CSCON'26 | Işık Üniversitesi IEEE Öğrenci Kolu</title>
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <script src="https://kit.fontawesome.com/f23a5aadfc.js" crossorigin="anonymous"></script>
+    <title>CSCON'26 - Yazılım ve Teknoloji Konferansı | Işık Üniversitesi</title>
 
-    <!-- Tailwind Configs -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/f23a5aadfc.js" crossorigin="anonymous" defer></script>
     <style type="text/tailwindcss">
         @theme {
             --color-orange-50: #fff7ed;
@@ -73,6 +70,7 @@
     </style>
 
     <style>
+        /* Stillerin geri kalanı aynı bırakıldı */
         :root {
             --color-cs-blue: #00B5E2;
             --color-cs-orange: #FFA300;
@@ -80,7 +78,6 @@
             --color-cs-gray: #75787B;
         }
 
-        /* Text Smart Animate */
         .text-smart-animate>* {
             opacity: 0;
         }
@@ -103,7 +100,6 @@
             }
         }
 
-        /* Appear Up Animate */
         .appear-up-animate {
             opacity: 0;
             transform: translateY(20px);
@@ -125,7 +121,6 @@
             }
         }
 
-        /* Animated Background */
         .animated-background {
             position: absolute;
             top: 0;
@@ -144,10 +139,8 @@
             color: var(--color-cs-blue);
             user-select: none;
             opacity: 0.03;
-
             animation-name: flicker;
             animation-duration: 0.6s;
-
             animation-iteration-count: infinite;
             animation-direction: alternate;
         }
@@ -205,16 +198,13 @@
             display: none;
         }
 
-        /* Seçili Gün Stili */
         .day-btn.active {
             background-color: #2563eb;
-            /* Parlak Mavi */
             color: white;
             border-color: #3b82f6;
             box-shadow: 0 0 15px rgba(37, 99, 235, 0.5);
         }
 
-        /* Dropdown ok işaretini özelleştirme (Dark tema için) */
         select {
             -webkit-appearance: none;
             -moz-appearance: none;
@@ -224,100 +214,277 @@
             background-size: 1em;
         }
 
-        /* JSON-LD for SEO */
         .structured-data {
             display: none;
         }
     </style>
 
-    <!-- Structured Data for the Event -->
     <script type="application/ld+json" class="structured-data">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "CSCON'26 Yazılım ve Teknoloji Konferansı",
+  "startDate": "2026-03-06T09:00",
+  "endDate": "2026-03-08T18:00",
+  "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "location": [
     {
-      "@context": "https://schema.org",
+      "@type": "Place",
+      "name": "Rauf Denktaş Kültür Merkezi",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sarıyer",
+        "addressRegion": "İstanbul",
+        "addressCountry": "TR"
+      }
+    },
+    {
+      "@type": "Place",
+      "name": "Işık Üniversitesi Maslak Kampüsü",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sarıyer",
+        "addressRegion": "İstanbul",
+        "addressCountry": "TR"
+      }
+    }
+  ],
+  "image": "https://isikieee.com.tr/img/cscon/cscon-logo.png",
+  "description": "Türkiye'nin en prestijli yazılım ve teknoloji konferansı. Alanında uzman konuşmacılar, interaktif workshoplar ve networking fırsatları ile dolu 3 gün.",
+  "offers": {
+    "@type": "Offer",
+    "url": "https://forms.gle/DNtMDmvQXBaZPanF6",
+    "price": "0",
+    "priceCurrency": "TRY",
+    "availability": "https://schema.org/InStock",
+    "validFrom": "2026-02-13T00:00:00+03:00",
+    "description": "Ücretsiz Kayıt Formu"
+  },
+  "organizer": {
+    "@type": "Organization",
+    "name": "Işık Üniversitesi IEEE Öğrenci Kolu",
+    "url": "https://isikieee.com.tr"
+  },
+  "performer": [
+    {"@type": "Person", "name": "Barış Çeliktaş"},
+    {"@type": "Person", "name": "Hakkı İbrahim Ünyeli"},
+    {"@type": "Person", "name": "Gökçen Üstündağ"},
+    {"@type": "Person", "name": "Mustafa Tansu Güler"},
+    {"@type": "Person", "name": "Seher Sarıoğlu"},
+    {"@type": "Person", "name": "Kayra Uzun"},
+    {"@type": "Person", "name": "Fatih Kadir Akın"},
+    {"@type": "Person", "name": "Mustafa Özdemir"},
+    {"@type": "Person", "name": "Berhan Türkü Ay"},
+    {"@type": "Person", "name": "Pınar Ersoy"},
+    {"@type": "Person", "name": "Baki Gül"},
+    {"@type": "Person", "name": "Burçin Memoğlu Kamçı"},
+    {"@type": "Person", "name": "Tolga Kamçı"},
+    {"@type": "Person", "name": "Emre Savcı"},
+    {"@type": "Person", "name": "Talha Çamlıca"},
+    {"@type": "Person", "name": "Veli Uysal"},
+    {"@type": "Person", "name": "Batuhan Hangün"},
+    {"@type": "Person", "name": "Utku Erdemir"},
+    {"@type": "Person", "name": "Şenol Aldıbaş"},
+    {"@type": "Person", "name": "Emre Ersoy"},
+    {"@type": "Person", "name": "Ali Eren Kayhan"},
+    {"@type": "Person", "name": "Ahmet Ali Süzen"},
+    {"@type": "Person", "name": "Barış Usta"},
+    {"@type": "Person", "name": "Nihat Alpcan Onaran"},
+    {"@type": "Person", "name": "Ahmet Enes Keçeci"},
+    {"@type": "Person", "name": "Feyza Demirel"},
+    {"@type": "Person", "name": "M. Göker Sarp"}
+  ],
+  "subEvent": [
+    {
       "@type": "Event",
-      "name": "CSCON'26",
+      "name": "CSCON'26 - 1. Gün (Açılış ve Konferanslar)",
       "startDate": "2026-03-06T09:00",
-      "endDate": "2026-03-08T18:00",
-      "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
+      "endDate": "2026-03-06T18:00",
       "eventStatus": "https://schema.org/EventScheduled",
-      "location": [
-        {
-            "@type": "Place",
-            "name": "Rauf Denktaş Kültür Merkezi",
-            "address": "Sarıyer, İstanbul"
-        },
-        {
-            "@type": "Place",
-            "name": "Işık Üniversitesi Maslak Kampüsü",
-            "address": "Maslak, İstanbul"
-        }
-      ],
       "image": "https://isikieee.com.tr/img/cscon/cscon-logo.png",
-      "description": "Türkiye'nin en prestijli yazılım ve teknoloji konferansı. Alanında uzman konuşmacılar, interaktif workshoplar ve networking fırsatları ile dolu 3 gün.",
+      "description": "Etkinliğimizin ilk günü, İstanbul'un kalbinde yer alan Rauf Denktaş Kültür Merkezi'nde gerçekleşecek. Sektör liderleri ile açılış konuşmaları.",
+      "location": {
+        "@type": "Place",
+        "name": "Rauf Denktaş Kültür Merkezi",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Sarıyer",
+          "addressRegion": "İstanbul",
+          "addressCountry": "TR"
+        }
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://forms.gle/DNtMDmvQXBaZPanF6",
+        "price": "0",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2026-02-13T00:00:00+03:00"
+      },
       "organizer": {
         "@type": "Organization",
         "name": "Işık Üniversitesi IEEE Öğrenci Kolu",
         "url": "https://isikieee.com.tr"
-      }
+      },
+      "performer": [
+        {"@type": "Person", "name": "Barış Çeliktaş"},
+        {"@type": "Person", "name": "Hakkı İbrahim Ünyeli"},
+        {"@type": "Person", "name": "Gökçen Üstündağ"},
+        {"@type": "Person", "name": "Mustafa Tansu Güler"},
+        {"@type": "Person", "name": "Seher Sarıoğlu"},
+        {"@type": "Person", "name": "Kayra Uzun"},
+        {"@type": "Person", "name": "Fatih Kadir Akın"}
+      ]
+    },
+    {
+      "@type": "Event",
+      "name": "CSCON'26 - 2. Gün (Workshoplar)",
+      "startDate": "2026-03-07T09:00",
+      "endDate": "2026-03-07T18:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "image": "https://isikieee.com.tr/img/cscon/cscon-logo.png",
+      "description": "Etkinliğin ikinci günü, ev sahibimiz Işık Üniversitesi'nin Maslak Kampüsü'nde devam edecek. İnteraktif workshoplar ve networking.",
+      "location": {
+        "@type": "Place",
+        "name": "Işık Üniversitesi Maslak Kampüsü",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Sarıyer",
+          "addressRegion": "İstanbul",
+          "addressCountry": "TR"
+        }
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://forms.gle/DNtMDmvQXBaZPanF6",
+        "price": "0",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2026-02-13T00:00:00+03:00"
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Işık Üniversitesi IEEE Öğrenci Kolu",
+        "url": "https://isikieee.com.tr"
+      },
+      "performer": [
+        {"@type": "Person", "name": "Mustafa Özdemir"},
+        {"@type": "Person", "name": "Berhan Türkü Ay"},
+        {"@type": "Person", "name": "Pınar Ersoy"},
+        {"@type": "Person", "name": "Baki Gül"},
+        {"@type": "Person", "name": "Burçin Memoğlu Kamçı"},
+        {"@type": "Person", "name": "Tolga Kamçı"},
+        {"@type": "Person", "name": "Emre Savcı"},
+        {"@type": "Person", "name": "Talha Çamlıca"},
+        {"@type": "Person", "name": "Veli Uysal"},
+        {"@type": "Person", "name": "Batuhan Hangün"},
+        {"@type": "Person", "name": "Utku Erdemir"}
+      ]
+    },
+    {
+      "@type": "Event",
+      "name": "CSCON'26 - 3. Gün (Workshoplar)",
+      "startDate": "2026-03-08T09:00",
+      "endDate": "2026-03-08T18:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "image": "https://isikieee.com.tr/img/cscon/cscon-logo.png",
+      "description": "Etkinliğin üçüncü günü, ev sahibimiz Işık Üniversitesi'nin Maslak Kampüsü'nde devam edecek. İnteraktif workshoplar ve networking.",
+      "location": {
+        "@type": "Place",
+        "name": "Işık Üniversitesi Maslak Kampüsü",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Sarıyer",
+          "addressRegion": "İstanbul",
+          "addressCountry": "TR"
+        }
+      },
+      "offers": {
+        "@type": "Offer",
+        "url": "https://forms.gle/DNtMDmvQXBaZPanF6",
+        "price": "0",
+        "priceCurrency": "TRY",
+        "availability": "https://schema.org/InStock",
+        "validFrom": "2026-02-13T00:00:00+03:00"
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Işık Üniversitesi IEEE Öğrenci Kolu",
+        "url": "https://isikieee.com.tr"
+      },
+      "performer": [
+        {"@type": "Person", "name": "Şenol Aldıbaş"},
+        {"@type": "Person", "name": "Emre Ersoy"},
+        {"@type": "Person", "name": "Ali Eren Kayhan"},
+        {"@type": "Person", "name": "Ahmet Ali Süzen"},
+        {"@type": "Person", "name": "Barış Usta"},
+        {"@type": "Person", "name": "Nihat Alpcan Onaran"},
+        {"@type": "Person", "name": "Ahmet Enes Keçeci"},
+        {"@type": "Person", "name": "Feyza Demirel"},
+        {"@type": "Person", "name": "M. Göker Sarp"}
+      ]
     }
-    </script>
+  ]
+}
+</script>
 </head>
 
 <body class="bg-gray-950 text-white font-sans">
-    <nav
-        class="w-full flex justify-between items-center px-5 py-5 fixed top-0 left-0 backdrop-blur-lg bg-black/30 z-100 sm:flex-row flex-col gap-5">
-        <img class="w-screen sm:w-96 xl:w-112 object-contain" src="./img/cscon/TrSac.png" />
-        <div class="flex flex-row gap-5 items-center justify-between max-sm:w-screen max-sm:px-5">
-            <div class="flex gap-5 justift-center align-center flex-row lg:flex hidden xl:gap-10 mr-5">
-                <a href="#about"
-                    class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Hakkında</a>
-                <a href="#venues"
-                    class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Konumlar</a>
-                <a href="#schedule"
-                    class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Etkinlik Akışı</a>
-                <!-- <a href="#speakers"
-                    class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Konuşmacılar</a> -->
-                <a href="#sponsors"
-                    class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Sponsorlar</a>
+    <header>
+        <nav
+            class="w-full flex justify-between items-center px-5 py-5 fixed top-0 left-0 backdrop-blur-lg bg-black/30 z-100 sm:flex-row flex-col gap-5">
+            <img class="w-screen sm:w-96 xl:w-112 object-contain" src="./img/cscon/TrSac.png"
+                alt="IEEE Computer Society Türkiye SAC" />
+            <div class="flex flex-row gap-5 items-center justify-between max-sm:w-screen max-sm:px-5">
+                <div class="flex gap-5 justift-center align-center flex-row lg:flex hidden xl:gap-10 mr-5">
+                    <a href="#about"
+                        class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Hakkında</a>
+                    <a href="#venues"
+                        class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Konumlar</a>
+                    <a href="#schedule"
+                        class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Etkinlik
+                        Akışı</a>
+                    <a href="#sponsors"
+                        class="hover:text-orange-500 transition duration-150 ease-in-out cursor-pointer">Sponsorlar</a>
+                </div>
+                <button data-nav-button onclick="toggleMobileNav()" aria-label="Mobil Menüyü Aç"
+                    class="grid place-items-center rounded-md w-10 h-10 hover:bg-gray-300/20 lg:hidden cursor-pointer">
+                    <i class="fa-solid fa-bars fa-lg" aria-hidden="true"></i>
+                </button>
+                <a href="https://forms.gle/DNtMDmvQXBaZPanF6" target="_blank" rel="noopener noreferrer"
+                    class="grid place-items-center bg-orange-500 text-orange-950 font-semibold py-2 px-4 rounded-md hover:bg-orange-600 hover:text-white transition duration-150 ease-in-out cursor-pointer">
+                    Kayıt Ol
+                </a>
             </div>
-            <!-- Mobile Burger Button -->
-            <button data-nav-button onclick="toggleMobileNav()"
-                class="grid place-items-center rounded-md w-10 h-10 hover:bg-gray-300/20 lg:hidden cursor-pointer">
-                <i class="fa-solid fa-bars fa-lg"></i>
-            </button>
-            <a href="https://forms.gle/DNtMDmvQXBaZPanF6" target="_blank" rel="noopener noreferrer"
-                class="grid place-items-center bg-orange-500 text-orange-950 font-semibold py-2 px-4 rounded-md hover:bg-orange-600 hover:text-white transition duration-150 ease-in-out cursor-pointer">
-                Kayıt Ol
-            </a>
-        </div>
 
-        <!-- Mobile Navigation -->
-        <div data-nav-panel
-            class="w-full absolute top-full left-0 py-5 px-5 flex flex-col gap-2 bg-gray-950 hidden disappear-up">
-            <a href="#about"
-                class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Hakkında</a>
-            <a href="#venues"
-                class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Konumlar</a>
-            <a href="#schedule"
-                class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Etkinlik
-                Akışı</a>
-            <!-- <a href="#speakers"
-                class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Konuşmacılar</a> -->
+            <div data-nav-panel
+                class="w-full absolute top-full left-0 py-5 px-5 flex flex-col gap-2 bg-gray-950 hidden disappear-up">
+                <a href="#about"
+                    class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Hakkında</a>
+                <a href="#venues"
+                    class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Konumlar</a>
+                <a href="#schedule"
+                    class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Etkinlik
+                    Akışı</a>
+                <a href="#sponsors"
+                    class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Sponsorlar</a>
+            </div>
+        </nav>
+    </header>
 
-            <a href="#sponsors"
-                class="h-16 rounded-sm bg-gray-500/10 flex justify-start items-center px-5 hover:bg-gray-700">Sponsorlar</a>
-        </div>
-    </nav>
     <main>
-
         <section id="hero" class="h-svh flex justify-center items-center max-sm:items-end max-sm:pb-20">
             <div class="flex flex-col justify-center items-center gap-8 max-sm:w-full max-sm:px-6">
-                <div class="flex flex-col justift-center items-center gap-2">
+                <h1 class="flex flex-col justift-center items-center gap-2">
                     <span class="font-mono text-orange-500 uppercase font-bold text-center">Işık Üniversitesi Ev
                         Sahipliğinde</span>
-                    <img src="./img/cscon/cscon-logo.png" class="w-130 object-contain max-sm:w-full" />
-                    <p class="text-xl appear-up-animate text-center">Türkiye'nin En Prestijli Yazılım Konferansı</p>
-                </div>
+                    <img src="./img/cscon/cscon-logo.png" alt="CSCON 2026 Logosu"
+                        class="w-130 object-contain max-sm:w-full" />
+                    <span class="text-xl appear-up-animate text-center block mt-2">Türkiye'nin En Prestijli Yazılım
+                        Konferansı</span>
+                </h1>
+
                 <div class="flex gap-4 max-sm:w-full">
                     <a href="https://forms.gle/DNtMDmvQXBaZPanF6" target="_blank" rel="noopener noreferrer"
                         class="cursor-pointer w-52 grid place-items-center bg-orange-500 text-orange-950 font-semibold py-3 px-5 rounded-md hover:bg-orange-600 hover:text-white trasition duration-150 ease-in-out max-sm:w-full text-center">
@@ -330,7 +497,6 @@
                 </div>
             </div>
 
-            <!-- Background Generator -->
             <div class="animated-background">
                 <span>0</span>
             </div>
@@ -342,14 +508,8 @@
             <div class="flex flex-col gap-3 justify-center items-center">
                 <h2 class="text-4xl font-bold mb-5 text-smart-animate text-orange-500">CSCON Nedir?</h2>
                 <p class="max-w-3xl text-center text-lg appear-up-animate">
-                    Bu sene 6-7-8 Mart tarihlerinde gerçekleşecek olan CSCON (Computer Society Conference), yazılım ve
-                    teknolojiye odaklanan, alanlarında başarılı
-                    konuşmacıların
-                    deneyimlerini paylaştıkları, katılımcıları gelişen teknolojiler hakkında bilgilendiren ve sektördeki
-                    yenilikleri takip etmelerini sağlayan 3 günlük bir etkinliktir. Katılımcılar etkinlikte kendi ilgi
-                    alanlarına göre
-                    interaktif workshoplara katılıp bilgi birikimlerini arttırabilir, fuaye alanlarında ise sektördeki
-                    firmalarla tanışma ve networking yapma fırsatı bulabilirler.
+                    Bu sene 6-7-8 Mart tarihlerinde gerçekleşecek olan CSCON (Computer Society Congress), yazılım ve
+                    teknolojiye odaklanan...
                 </p>
             </div>
 
