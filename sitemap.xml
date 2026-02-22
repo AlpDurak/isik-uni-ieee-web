@@ -1,75 +1,60 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+	<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 	<url>
-		<loc>https://isikieee.com.tr/xtreme</loc>
-		<lastmod>2026-02-22-T18:42:05+03:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://isikieee.com.tr/team</loc>
-		<lastmod>2026-02-22-T18:42:05+03:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://isikieee.com.tr/siu</loc>
-		<lastmod>2026-02-22-T18:42:05+03:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://isikieee.com.tr/portfolio-1</loc>
-		<lastmod>2026-02-22-T18:42:05+03:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://isikieee.com.tr/kongre</loc>
-		<lastmod>2026-02-22-T18:42:05+03:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://isikieee.com.tr</loc>
-		<lastmod>2026-02-22-T18:42:05+03:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://isikieee.com.tr/ieeeday</loc>
-		<lastmod>2026-02-22-T18:42:05+03:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
-	</url>
-	<url>
-		<loc>https://isikieee.com.tr/icecs2023</loc>
-		<lastmod>2026-02-22-T18:42:05+03:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
+		<loc>https://isikieee.com.tr/</loc>
+		<lastmod>2026-02-22T15:43:59+00:00</lastmod>
+		<priority>1.00</priority>
 	</url>
 	<url>
 		<loc>https://isikieee.com.tr/cscon26</loc>
-		<lastmod>2026-02-22-T18:42:05+03:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
+		<lastmod>2026-02-22T15:43:59+00:00</lastmod>
+		<priority>0.90</priority>
+	</url>
+	<url>
+		<loc>https://isikieee.com.tr/kongre</loc>
+		<lastmod>2026-02-22T15:43:59+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://isikieee.com.tr/siu</loc>
+		<lastmod>2026-02-22T15:43:59+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://isikieee.com.tr/xtreme</loc>
+		<lastmod>2026-02-22T15:43:59+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://isikieee.com.tr/ieeeday</loc>
+		<lastmod>2026-02-22T15:43:59+00:00</lastmod>
+		<priority>0.80</priority>
+	</url>
+	<url>
+		<loc>https://isikieee.com.tr/icecs2023</loc>
+		<lastmod>2026-02-22T15:43:59+00:00</lastmod>
+		<priority>0.80</priority>
 	</url>
 	<url>
 		<loc>https://isikieee.com.tr/contact</loc>
-		<lastmod>2026-02-22-T18:42:05+03:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
+		<lastmod>2026-02-22T15:43:59+00:00</lastmod>
+		<priority>0.80</priority>
 	</url>
 	<url>
-		<loc>https://isikieee.com.tr/calendar</loc>
-		<lastmod>2026-02-22-T18:42:05+03:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
+		<loc>https://isikieee.com.tr/portfolio-1</loc>
+		<lastmod>2026-02-22T15:43:59+00:00</lastmod>
+		<priority>0.64</priority>
+	</url>
+	<url>
+		<loc>https://isikieee.com.tr/team</loc>
+		<lastmod>2026-02-22T15:43:59+00:00</lastmod>
+		<priority>0.64</priority>
 	</url>
 	<url>
 		<loc>https://isikieee.com.tr/404</loc>
-		<lastmod>2026-02-22-T18:42:05+03:00</lastmod>
-		<changefreq>daily</changefreq>
-		<priority>1</priority>
+		<lastmod>2026-02-22T15:43:59+00:00</lastmod>
+		<priority>0.64</priority>
 	</url>
 </urlset>
